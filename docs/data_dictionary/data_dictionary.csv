@@ -1,55 +1,55 @@
 Variable,Type,Values,Comments
-ada_antibody,string,"assay result (e.g., `5`, `<10`, `not_tested`)",Anti-adalimumab antibody result captured during therapeutic drug monitoring; qualitative thresholds or numeric titres reported by the lab.
-ada_level,string,assay result in ug/mL (numeric or threshold string),Measured adalimumab concentration from therapeutic drug monitoring; labs often report numeric levels or threshold strings such as `>12`.
+study_id,string,,"Study-specific participant identifier using prefixes such as `GID-`, `MID-`, or `MINI-`."
+study_group,string,"`cd`, `uc`, `ibdu`, `non_ibd`, `await_dx`, `hc`","Disease classification at the visit: Crohn's disease (cd), Ulcerative colitis (uc), IBD unclassified (ibdu), non-IBD control, awaiting diagnosis, or healthy control."
+study_center,string,"`edinburgh`, `glasgow`, `aberdeen`, `dundee`",Recruiting centre recorded for the visit.
+sex,string,"`male`, `female`",Participant sex recorded by the study.
 age,int,,Participant age in years at the time of the visit.
 age_at_diagnosis,int,,Age in years when inflammatory bowel disease was first diagnosed.
+date_of_diagnosis,date,YYYY-MM-DD,Calendar date when inflammatory bowel disease was first diagnosed.
+has_active_symptoms,string,`1` / `0` or `yes` / `no`,Indicator of active symptoms at the visit; recorded as `1`/`0` or `yes`/`no` depending on source system.
+height,int,,Height measured in centimetres.
+weight,float,,Weight measured in kilograms.
+bmi,float,,Body mass index calculated as kg/m^2.
+nhs_bloods_date,date,YYYY-MM-DD,Date the NHS blood panel was collected.
 albumin,float,,"Serum albumin from NHS bloods, measured in g/L."
+basophils,float,,Absolute basophil count (x10^9/L) from NHS bloods.
+eosinophils,float,,Absolute eosinophil count (x10^9/L) from NHS bloods.
+haemoglobin,float,,Haemoglobin concentration (g/L) from NHS bloods.
+haematocrit,float,,Haematocrit reported as a proportion (L/L).
+lymphocytes,float,,Absolute lymphocyte count (x10^9/L) from NHS bloods.
+monocytes,float,,Absolute monocyte count (x10^9/L) from NHS bloods.
+neutrophils,float,,Absolute neutrophil count (x10^9/L) from NHS bloods.
+platelets,int,,Platelet count (x10^9/L) from NHS bloods.
+white_cell_count,float,,Total white cell count (x10^9/L) from NHS bloods.
+sodium,float,,Serum sodium (mmol/L) from NHS bloods.
+potassium,float,,Serum potassium (mmol/L) from NHS bloods.
+urea,float,,Serum urea (mmol/L) from NHS bloods.
+creatinine,float,,"Serum creatinine from NHS bloods, measured in umol/L."
+crp,float,,C-reactive protein (mg/L) from NHS bloods.
+calprotectin,string,"numeric or threshold string (e.g., `<20`, `>1800`, `no sample`)",Faecal calprotectin result (ug/g) reported as numeric values or qualitative thresholds by the laboratory.
+calprotectin_date,date,YYYY-MM-DD,Date the faecal calprotectin sample was collected.
+baseline_eims_none,int,"`1` yes, `0` no",Baseline survey response confirming no extra-intestinal manifestations were reported.
 baseline_eims_episcleritis,int,"`1` yes, `0` no",Baseline record indicating a history of episcleritis as an extra-intestinal manifestation.
 baseline_eims_erythema_nodosum,int,"`1` yes, `0` no",Baseline record indicating erythema nodosum as an extra-intestinal manifestation.
-baseline_eims_none,int,"`1` yes, `0` no",Baseline survey response confirming no extra-intestinal manifestations were reported.
 baseline_eims_pyoderma,int,"`1` yes, `0` no",Baseline record indicating pyoderma gangrenosum as an extra-intestinal manifestation.
 baseline_eims_sacroileitis,int,"`1` yes, `0` no",Baseline record indicating sacroiliitis as an extra-intestinal manifestation.
 baseline_eims_uveitis,int,"`1` yes, `0` no",Baseline record indicating uveitis as an extra-intestinal manifestation.
-basophils,float,,Absolute basophil count (x10^9/L) from NHS bloods.
-bmi,float,,Body mass index calculated as kg/m^2.
-calprotectin,string,"numeric or threshold string (e.g., `<20`, `>1800`, `no sample`)",Faecal calprotectin result (ug/g) reported as numeric values or qualitative thresholds by the laboratory.
-calprotectin_date,date,YYYY-MM-DD,Date the faecal calprotectin sample was collected.
-creatinine,float,,"Serum creatinine from NHS bloods, measured in umol/L."
-crp,float,,C-reactive protein (mg/L) from NHS bloods.
-date_of_diagnosis,date,YYYY-MM-DD,Calendar date when inflammatory bowel disease was first diagnosed.
-drug_level_date,date,YYYY-MM-DD,Date the therapeutic drug monitoring sample (for biologic drug or antibody levels) was taken.
-endoscopy_date,date,YYYY-MM-DD,Date of the most recent endoscopy associated with the visit.
-endoscopy_report,string,,Narrative endoscopy findings recorded in clinical notes.
-eosinophils,float,,Absolute eosinophil count (x10^9/L) from NHS bloods.
-haematocrit,float,,Haematocrit reported as a proportion (L/L).
-haemoglobin,float,,Haemoglobin concentration (g/L) from NHS bloods.
-has_active_symptoms,string,`1` / `0` or `yes` / `no`,Indicator of active symptoms at the visit; recorded as `1`/`0` or `yes`/`no` depending on source system.
-height,int,,Height measured in centimetres.
-ifx_antibody,string,"assay result (e.g., `5`, `<10`, `not_detected`)",Anti-infliximab antibody result from therapeutic drug monitoring; values include numeric titres or qualitative thresholds.
-ifx_level,string,assay result in ug/mL (numeric or threshold string),Measured infliximab concentration from therapeutic drug monitoring; labs report numeric values or thresholds such as `>12`.
-lymphocytes,float,,Absolute lymphocyte count (x10^9/L) from NHS bloods.
-monocytes,float,,Absolute monocyte count (x10^9/L) from NHS bloods.
-mri_pelvis,int,"`1` performed, `0` not performed",Indicator that a pelvic MRI was completed for the visit.
-mri_small_bowel,int,"`1` performed, `0` not performed",Indicator that a small bowel MRI was completed for the visit.
-mri_small_bowel_report,string,,Narrative findings from the small bowel MRI report.
-neutrophils,float,,Absolute neutrophil count (x10^9/L) from NHS bloods.
-nhs_bloods_date,date,YYYY-MM-DD,Date the NHS blood panel was collected.
-pathology_report,string,,"Narrative pathology findings (e.g., biopsy results)."
-platelets,int,,Platelet count (x10^9/L) from NHS bloods.
-potassium,float,,Serum potassium (mmol/L) from NHS bloods.
 previous_appendicectomy,int,"`1` yes, `0` no",History of appendicectomy recorded at baseline.
 previous_tonsillectomy,int,"`1` yes, `0` no, `-1000` unknown",History of tonsillectomy recorded at baseline; `-1000` is used where the source study captured an explicit unknown response.
-sampling_ada,int,"`1` yes, `0` no",Adalimumab was being taken at the time of sampling.
 sampling_asa,int,"`1` yes, `0` no",Aminosalicylates (5-ASA) were being taken at the time of sampling.
+sampling_ada,int,"`1` yes, `0` no",Adalimumab was being taken at the time of sampling.
 sampling_ifx,int,"`1` yes, `0` no",Infliximab was being taken at the time of sampling.
 sampling_mtx,int,"`1` yes, `0` no",Methotrexate was being taken at the time of sampling.
 sampling_uste,int,"`1` yes, `0` no",Ustekinumab was being taken at the time of sampling.
 sampling_vedo,int,"`1` yes, `0` no",Vedolizumab was being taken at the time of sampling.
-sex,string,"`male`, `female`",Participant sex recorded by the study.
-sodium,float,,Serum sodium (mmol/L) from NHS bloods.
-study_center,string,"`edinburgh`, `glasgow`, `aberdeen`, `dundee`",Recruiting centre recorded for the visit.
-study_group,string,"`cd`, `uc`, `ibdu`, `non_ibd`, `await_dx`, `hc`","Disease classification at the visit: Crohn's disease (cd), Ulcerative colitis (uc), IBD unclassified (ibdu), non-IBD control, awaiting diagnosis, or healthy control."
-study_id,string,,"Study-specific participant identifier using prefixes such as `GID-`, `MID-`, or `MINI-`."
-urea,float,,Serum urea (mmol/L) from NHS bloods.
-weight,float,,Weight measured in kilograms.
-white_cell_count,float,,Total white cell count (x10^9/L) from NHS bloods.
+drug_level_date,date,YYYY-MM-DD,Date the therapeutic drug monitoring sample (for biologic drug or antibody levels) was taken.
+ada_level,string,assay result in ug/mL (numeric or threshold string),Measured adalimumab concentration from therapeutic drug monitoring; labs often report numeric levels or threshold strings such as `>12`.
+ada_antibody,string,"assay result (e.g., `5`, `<10`, `not_tested`)",Anti-adalimumab antibody result captured during therapeutic drug monitoring; qualitative thresholds or numeric titres reported by the lab.
+ifx_level,string,assay result in ug/mL (numeric or threshold string),Measured infliximab concentration from therapeutic drug monitoring; labs report numeric values or thresholds such as `>12`.
+ifx_antibody,string,"assay result (e.g., `5`, `<10`, `not_detected`)",Anti-infliximab antibody result from therapeutic drug monitoring; values include numeric titres or qualitative thresholds.
+endoscopy_date,date,YYYY-MM-DD,Date of the most recent endoscopy associated with the visit.
+endoscopy_report,string,,Narrative endoscopy findings recorded in clinical notes.
+pathology_report,string,,"Narrative pathology findings (e.g., biopsy results)."
+mri_small_bowel,int,"`1` performed, `0` not performed",Indicator that a small bowel MRI was completed for the visit.
+mri_pelvis,int,"`1` performed, `0` not performed",Indicator that a pelvic MRI was completed for the visit.
+mri_small_bowel_report,string,,Narrative findings from the small bowel MRI report.

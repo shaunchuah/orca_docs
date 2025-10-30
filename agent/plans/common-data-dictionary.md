@@ -23,8 +23,8 @@ Researchers use the Orca documentation site (MkDocs Material) to understand data
 
 ## Decision Log
 
-- Decision: Present the unified dictionary in alphabetical order.
-  Rationale: Alphabetical ordering keeps the Markdown and CSV diff-friendly and aligns with how analysts search for field names.
+- Decision: Present the unified dictionary grouped by theme (demographics, labs, phenotyping, medications, investigations).
+  Rationale: Thematic grouping mirrors how analysts browse related variables and keeps the Markdown tables readable while the CSV preserves the same order for downstream tooling.
   Date/Author: 2025-10-30 (Codex)
 
 ## Outcomes & Retrospective
@@ -243,6 +243,7 @@ All analysis scripts operate on read-only copies of the example CSVs and write o
 - `agent/research/common_data_dictionary/common_fields.json` stores the profiled headers and value distributions.
 - `agent/research/common_data_dictionary/summary.md` summarizes inferred types and sample values.
 - `agent/research/common_data_dictionary/dictionary_entries.json` and `draft_dictionary.md` capture the curated definitions.
+- `agent/research/common_data_dictionary/grouped_tables.md` and `grouped_data_dictionary.csv` preserve the themed presentation used in the published docs.
 - Validation evidence: `uv run mkdocs build` (2025-10-30 17:28Z) completed without errors.
 
 ## Interfaces and Dependencies

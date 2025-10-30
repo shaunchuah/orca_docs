@@ -1,12 +1,3 @@
-# Unified Data Dictionary
-
-This standardized data dictionary is used for datasets within G-Trac. Only the common variables across datasets are standardized as shown below. Each study dataset will also include its own study-specific data fields.
-
-As a standard style guide, all variables in datasets will follow the snake_case naming convention. All characters will be in lower case, and underscores will be used instead of spaces.
-
-The sections below group the shared fields into themes so readers can quickly find related variables across datasets.
-
-
 ## Demographics & Visit Context
 
 | Variable | Type | Values | Comments |
@@ -85,4 +76,3 @@ The sections below group the shared fields into themes so readers can quickly fi
 | mri_small_bowel | int | `1` performed, `0` not performed | Indicator that a small bowel MRI was completed for the visit. |
 | mri_pelvis | int | `1` performed, `0` not performed | Indicator that a pelvic MRI was completed for the visit. |
 | mri_small_bowel_report | string |  | Narrative findings from the small bowel MRI report. |
-
