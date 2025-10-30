@@ -1,0 +1,3020 @@
+{
+  "common_field_count": 54,
+  "common_fields": [
+    {
+      "field": "ada_antibody",
+      "type": "string",
+      "distinct_values": 9,
+      "top_values": [
+        [
+          "5",
+          19
+        ],
+        [
+          "1",
+          5
+        ],
+        [
+          "<10",
+          3
+        ],
+        [
+          "not_tested",
+          2
+        ],
+        [
+          "4",
+          2
+        ],
+        [
+          "40-200",
+          1
+        ],
+        [
+          "10-40",
+          1
+        ],
+        [
+          ">200",
+          1
+        ],
+        [
+          "2",
+          1
+        ]
+      ],
+      "non_empty_samples": 35
+    },
+    {
+      "field": "ada_level",
+      "type": "string",
+      "distinct_values": 24,
+      "top_values": [
+        [
+          ">12",
+          16
+        ],
+        [
+          "9.8",
+          3
+        ],
+        [
+          "4",
+          2
+        ],
+        [
+          "36",
+          1
+        ],
+        [
+          "6.1",
+          1
+        ],
+        [
+          "3.1",
+          1
+        ],
+        [
+          "10.0",
+          1
+        ],
+        [
+          "0.0004",
+          1
+        ],
+        [
+          "7.6",
+          1
+        ],
+        [
+          "7.0",
+          1
+        ]
+      ],
+      "non_empty_samples": 42
+    },
+    {
+      "field": "age",
+      "type": "int",
+      "distinct_values": 69,
+      "top_values": [
+        [
+          "37",
+          17
+        ],
+        [
+          "23",
+          17
+        ],
+        [
+          "31",
+          15
+        ],
+        [
+          "15",
+          15
+        ],
+        [
+          "13",
+          15
+        ],
+        [
+          "28",
+          14
+        ],
+        [
+          "10",
+          13
+        ],
+        [
+          "26",
+          11
+        ],
+        [
+          "14",
+          11
+        ],
+        [
+          "21",
+          10
+        ]
+      ],
+      "non_empty_samples": 394
+    },
+    {
+      "field": "age_at_diagnosis",
+      "type": "int",
+      "distinct_values": 61,
+      "top_values": [
+        [
+          "13",
+          22
+        ],
+        [
+          "15",
+          17
+        ],
+        [
+          "21",
+          14
+        ],
+        [
+          "22",
+          14
+        ],
+        [
+          "51",
+          13
+        ],
+        [
+          "19",
+          12
+        ],
+        [
+          "10",
+          12
+        ],
+        [
+          "11",
+          12
+        ],
+        [
+          "18",
+          11
+        ],
+        [
+          "24",
+          11
+        ]
+      ],
+      "non_empty_samples": 353
+    },
+    {
+      "field": "albumin",
+      "type": "string",
+      "distinct_values": 35,
+      "top_values": [
+        [
+          "40",
+          59
+        ],
+        [
+          "39",
+          57
+        ],
+        [
+          "36",
+          50
+        ],
+        [
+          "38",
+          49
+        ],
+        [
+          "41",
+          48
+        ],
+        [
+          "43",
+          40
+        ],
+        [
+          "35",
+          39
+        ],
+        [
+          "42",
+          38
+        ],
+        [
+          "33",
+          35
+        ],
+        [
+          "37",
+          34
+        ]
+      ],
+      "non_empty_samples": 617
+    },
+    {
+      "field": "baseline_eims_episcleritis",
+      "type": "int",
+      "distinct_values": 1,
+      "top_values": [
+        [
+          "0",
+          394
+        ]
+      ],
+      "non_empty_samples": 394
+    },
+    {
+      "field": "baseline_eims_erythema_nodosum",
+      "type": "int",
+      "distinct_values": 2,
+      "top_values": [
+        [
+          "0",
+          392
+        ],
+        [
+          "1",
+          2
+        ]
+      ],
+      "non_empty_samples": 394
+    },
+    {
+      "field": "baseline_eims_none",
+      "type": "int",
+      "distinct_values": 2,
+      "top_values": [
+        [
+          "1",
+          312
+        ],
+        [
+          "0",
+          82
+        ]
+      ],
+      "non_empty_samples": 394
+    },
+    {
+      "field": "baseline_eims_pyoderma",
+      "type": "int",
+      "distinct_values": 1,
+      "top_values": [
+        [
+          "0",
+          394
+        ]
+      ],
+      "non_empty_samples": 394
+    },
+    {
+      "field": "baseline_eims_sacroileitis",
+      "type": "int",
+      "distinct_values": 2,
+      "top_values": [
+        [
+          "0",
+          392
+        ],
+        [
+          "1",
+          2
+        ]
+      ],
+      "non_empty_samples": 394
+    },
+    {
+      "field": "baseline_eims_uveitis",
+      "type": "int",
+      "distinct_values": 2,
+      "top_values": [
+        [
+          "0",
+          391
+        ],
+        [
+          "1",
+          3
+        ]
+      ],
+      "non_empty_samples": 394
+    },
+    {
+      "field": "basophils",
+      "type": "string",
+      "distinct_values": 21,
+      "top_values": [
+        [
+          "0.02",
+          86
+        ],
+        [
+          "0.03",
+          85
+        ],
+        [
+          "0.05",
+          81
+        ],
+        [
+          "0",
+          80
+        ],
+        [
+          "0.01",
+          61
+        ],
+        [
+          "0.04",
+          58
+        ],
+        [
+          "0.06",
+          49
+        ],
+        [
+          "0.07",
+          37
+        ],
+        [
+          "0.1",
+          27
+        ],
+        [
+          "0.08",
+          15
+        ]
+      ],
+      "non_empty_samples": 628
+    },
+    {
+      "field": "bmi",
+      "type": "string",
+      "distinct_values": 227,
+      "top_values": [
+        [
+          "20.9",
+          13
+        ],
+        [
+          "22.2",
+          9
+        ],
+        [
+          "27.2",
+          9
+        ],
+        [
+          "23.2",
+          7
+        ],
+        [
+          "23",
+          7
+        ],
+        [
+          "18.5",
+          7
+        ],
+        [
+          "19.9",
+          7
+        ],
+        [
+          "24",
+          7
+        ],
+        [
+          "18.8",
+          6
+        ],
+        [
+          "21.2",
+          6
+        ]
+      ],
+      "non_empty_samples": 624
+    },
+    {
+      "field": "calprotectin",
+      "type": "string",
+      "distinct_values": 356,
+      "top_values": [
+        [
+          "20",
+          24
+        ],
+        [
+          "1250",
+          14
+        ],
+        [
+          "1800",
+          12
+        ],
+        [
+          "3000",
+          11
+        ],
+        [
+          "25",
+          10
+        ],
+        [
+          "<20",
+          8
+        ],
+        [
+          "<25",
+          8
+        ],
+        [
+          ">1800",
+          8
+        ],
+        [
+          ">1250",
+          7
+        ],
+        [
+          "no sample",
+          6
+        ]
+      ],
+      "non_empty_samples": 537
+    },
+    {
+      "field": "calprotectin_date",
+      "type": "string",
+      "distinct_values": 434,
+      "top_values": [
+        [
+          "2022-11-16",
+          5
+        ],
+        [
+          "2022-04-13",
+          4
+        ],
+        [
+          "2022-08-17",
+          4
+        ],
+        [
+          "2022-10-19",
+          4
+        ],
+        [
+          "2022-07-13",
+          4
+        ],
+        [
+          "2019-06-19",
+          3
+        ],
+        [
+          "2022-02-16",
+          3
+        ],
+        [
+          "2021-12-20",
+          3
+        ],
+        [
+          "2022-07-20",
+          3
+        ],
+        [
+          "2022-06-15",
+          3
+        ]
+      ],
+      "non_empty_samples": 535
+    },
+    {
+      "field": "creatinine",
+      "type": "int",
+      "distinct_values": 89,
+      "top_values": [
+        [
+          "72",
+          23
+        ],
+        [
+          "69",
+          22
+        ],
+        [
+          "67",
+          20
+        ],
+        [
+          "59",
+          18
+        ],
+        [
+          "57",
+          17
+        ],
+        [
+          "58",
+          17
+        ],
+        [
+          "61",
+          17
+        ],
+        [
+          "68",
+          16
+        ],
+        [
+          "65",
+          16
+        ],
+        [
+          "77",
+          15
+        ]
+      ],
+      "non_empty_samples": 633
+    },
+    {
+      "field": "crp",
+      "type": "string",
+      "distinct_values": 73,
+      "top_values": [
+        [
+          "1",
+          158
+        ],
+        [
+          "2",
+          87
+        ],
+        [
+          "3",
+          47
+        ],
+        [
+          "1.0",
+          38
+        ],
+        [
+          "4",
+          31
+        ],
+        [
+          "5",
+          26
+        ],
+        [
+          "9",
+          19
+        ],
+        [
+          "6",
+          16
+        ],
+        [
+          "0",
+          15
+        ],
+        [
+          "11",
+          13
+        ]
+      ],
+      "non_empty_samples": 617
+    },
+    {
+      "field": "date_of_diagnosis",
+      "type": "string",
+      "distinct_values": 250,
+      "top_values": [
+        [
+          "2011-01-01",
+          11
+        ],
+        [
+          "2004-01-01",
+          7
+        ],
+        [
+          "2012-01-01",
+          7
+        ],
+        [
+          "2009-01-01",
+          6
+        ],
+        [
+          "2015-01-01",
+          6
+        ],
+        [
+          "2006-01-01",
+          5
+        ],
+        [
+          "2014-01-01",
+          5
+        ],
+        [
+          "2016-10-01",
+          4
+        ],
+        [
+          "2013-01-01",
+          4
+        ],
+        [
+          "2018-10-01",
+          4
+        ]
+      ],
+      "non_empty_samples": 353
+    },
+    {
+      "field": "drug_level_date",
+      "type": "string",
+      "distinct_values": 76,
+      "top_values": [
+        [
+          "2022-04-21",
+          2
+        ],
+        [
+          "2022-03-14",
+          2
+        ],
+        [
+          "2022-11-16",
+          2
+        ],
+        [
+          "2024-09-20",
+          2
+        ],
+        [
+          "2020-10-02",
+          1
+        ],
+        [
+          "2019-01-15",
+          1
+        ],
+        [
+          "2018-04-18",
+          1
+        ],
+        [
+          "2019-03-29",
+          1
+        ],
+        [
+          "2023-04-23",
+          1
+        ],
+        [
+          "2019-06-12",
+          1
+        ]
+      ],
+      "non_empty_samples": 80
+    },
+    {
+      "field": "endoscopy_date",
+      "type": "string",
+      "distinct_values": 228,
+      "top_values": [
+        [
+          "2021-02-22",
+          6
+        ],
+        [
+          "2021-04-12",
+          4
+        ],
+        [
+          "2019-09-09",
+          4
+        ],
+        [
+          "2019-11-25",
+          4
+        ],
+        [
+          "2022-05-23",
+          4
+        ],
+        [
+          "2021-07-06",
+          4
+        ],
+        [
+          "2022-05-09",
+          4
+        ],
+        [
+          "2022-03-25",
+          4
+        ],
+        [
+          "2019-09-25",
+          3
+        ],
+        [
+          "2020-01-21",
+          3
+        ]
+      ],
+      "non_empty_samples": 315
+    },
+    {
+      "field": "endoscopy_report",
+      "type": "string",
+      "distinct_values": 293,
+      "top_values": [
+        [
+          "Normal",
+          6
+        ],
+        [
+          "Normal ileum and colon",
+          3
+        ],
+        [
+          "uploaded",
+          2
+        ],
+        [
+          "Colon normal, ileum not intubated.  Caecum and ICV valve distorted, ICV stenosed cannot intubate but small aphthous ulcer overlying",
+          1
+        ],
+        [
+          "Confluent mod-severe colitis rectum to prox desc colon; fine aphthous ulcers from caecum to transverse colon",
+          1
+        ],
+        [
+          "Mildly active rectal and caecal disease with patchy granular mucosa, no ulceration.    .",
+          1
+        ],
+        [
+          "apthous ulcers in neo TI right transverse and proximal descending  Normal in distal descending, sigmoid and rectum.",
+          1
+        ],
+        [
+          "2-3 small ulcers seen in ileum and ICV (very minor) rest of colon looked ok  SES-CD for TI = 2",
+          1
+        ],
+        [
+          "SES-CD 2 for caecum and sigmoid only  UGI, ileal, colonic and perianal CD Dx 2008  AZA 2009-2010 loss of repsonse  Very mildly active Crohn's in the caecum and sigmoid  Rest of colon looked normal. SES-CD 2  MTX 2010-2016 (planned withdrawal)  ADA 2017-now",
+          1
+        ],
+        [
+          "Normal except for hyperplastic polyp",
+          1
+        ]
+      ],
+      "non_empty_samples": 301
+    },
+    {
+      "field": "eosinophils",
+      "type": "string",
+      "distinct_values": 81,
+      "top_values": [
+        [
+          "0.06",
+          30
+        ],
+        [
+          "0.14",
+          28
+        ],
+        [
+          "0",
+          25
+        ],
+        [
+          "0.12",
+          24
+        ],
+        [
+          "0.09",
+          22
+        ],
+        [
+          "0.05",
+          21
+        ],
+        [
+          "0.08",
+          20
+        ],
+        [
+          "0.01",
+          20
+        ],
+        [
+          "0.16",
+          19
+        ],
+        [
+          "0.03",
+          19
+        ]
+      ],
+      "non_empty_samples": 628
+    },
+    {
+      "field": "haematocrit",
+      "type": "string",
+      "distinct_values": 186,
+      "top_values": [
+        [
+          "0.39",
+          22
+        ],
+        [
+          "0.38",
+          17
+        ],
+        [
+          "0.36",
+          17
+        ],
+        [
+          "0.4",
+          16
+        ],
+        [
+          "0.43",
+          14
+        ],
+        [
+          "0.41",
+          14
+        ],
+        [
+          "0.44",
+          13
+        ],
+        [
+          "0.42",
+          12
+        ],
+        [
+          "0.37",
+          11
+        ],
+        [
+          "0.35",
+          10
+        ]
+      ],
+      "non_empty_samples": 625
+    },
+    {
+      "field": "haemoglobin",
+      "type": "string",
+      "distinct_values": 91,
+      "top_values": [
+        [
+          "132",
+          26
+        ],
+        [
+          "130",
+          26
+        ],
+        [
+          "125",
+          23
+        ],
+        [
+          "149",
+          18
+        ],
+        [
+          "135",
+          17
+        ],
+        [
+          "141",
+          16
+        ],
+        [
+          "128",
+          15
+        ],
+        [
+          "127",
+          15
+        ],
+        [
+          "144",
+          15
+        ],
+        [
+          "129",
+          14
+        ]
+      ],
+      "non_empty_samples": 628
+    },
+    {
+      "field": "has_active_symptoms",
+      "type": "string",
+      "distinct_values": 4,
+      "top_values": [
+        [
+          "1",
+          313
+        ],
+        [
+          "0",
+          170
+        ],
+        [
+          "yes",
+          137
+        ],
+        [
+          "no",
+          31
+        ]
+      ],
+      "non_empty_samples": 651
+    },
+    {
+      "field": "height",
+      "type": "string",
+      "distinct_values": 212,
+      "top_values": [
+        [
+          "182",
+          27
+        ],
+        [
+          "0",
+          25
+        ],
+        [
+          "180",
+          24
+        ],
+        [
+          "178",
+          23
+        ],
+        [
+          "162",
+          22
+        ],
+        [
+          "173",
+          18
+        ],
+        [
+          "170",
+          18
+        ],
+        [
+          "171",
+          16
+        ],
+        [
+          "175",
+          15
+        ],
+        [
+          "164",
+          14
+        ]
+      ],
+      "non_empty_samples": 656
+    },
+    {
+      "field": "ifx_antibody",
+      "type": "string",
+      "distinct_values": 9,
+      "top_values": [
+        [
+          "5",
+          16
+        ],
+        [
+          "1",
+          8
+        ],
+        [
+          "<10",
+          5
+        ],
+        [
+          "not_tested",
+          4
+        ],
+        [
+          "10-40",
+          1
+        ],
+        [
+          "40-200",
+          1
+        ],
+        [
+          "3",
+          1
+        ],
+        [
+          "4",
+          1
+        ],
+        [
+          "2",
+          1
+        ]
+      ],
+      "non_empty_samples": 38
+    },
+    {
+      "field": "ifx_level",
+      "type": "string",
+      "distinct_values": 37,
+      "top_values": [
+        [
+          "14.0",
+          2
+        ],
+        [
+          "7.3",
+          2
+        ],
+        [
+          ">12",
+          2
+        ],
+        [
+          "4.8",
+          1
+        ],
+        [
+          "18.7",
+          1
+        ],
+        [
+          "17.7",
+          1
+        ],
+        [
+          "13.2",
+          1
+        ],
+        [
+          "5.0",
+          1
+        ],
+        [
+          "11.9",
+          1
+        ],
+        [
+          "8.3",
+          1
+        ]
+      ],
+      "non_empty_samples": 40
+    },
+    {
+      "field": "lymphocytes",
+      "type": "string",
+      "distinct_values": 265,
+      "top_values": [
+        [
+          "1.7",
+          12
+        ],
+        [
+          "1.8",
+          11
+        ],
+        [
+          "1.5",
+          11
+        ],
+        [
+          "1.4",
+          10
+        ],
+        [
+          "1.2",
+          10
+        ],
+        [
+          "2.1",
+          9
+        ],
+        [
+          "1.6",
+          8
+        ],
+        [
+          "2.2",
+          8
+        ],
+        [
+          "2.3",
+          7
+        ],
+        [
+          "1.9",
+          7
+        ]
+      ],
+      "non_empty_samples": 628
+    },
+    {
+      "field": "monocytes",
+      "type": "string",
+      "distinct_values": 133,
+      "top_values": [
+        [
+          "0.5",
+          26
+        ],
+        [
+          "0.6",
+          25
+        ],
+        [
+          "0.4",
+          22
+        ],
+        [
+          "0.7",
+          16
+        ],
+        [
+          "0.9",
+          15
+        ],
+        [
+          "0.8",
+          14
+        ],
+        [
+          "0.3",
+          14
+        ],
+        [
+          "0.53",
+          13
+        ],
+        [
+          "0.43",
+          13
+        ],
+        [
+          "0.52",
+          12
+        ]
+      ],
+      "non_empty_samples": 628
+    },
+    {
+      "field": "mri_pelvis",
+      "type": "string",
+      "distinct_values": 4,
+      "top_values": [
+        [
+          "0",
+          73
+        ],
+        [
+          "0.0",
+          27
+        ],
+        [
+          "1",
+          5
+        ],
+        [
+          "1.0",
+          4
+        ]
+      ],
+      "non_empty_samples": 109
+    },
+    {
+      "field": "mri_small_bowel",
+      "type": "string",
+      "distinct_values": 4,
+      "top_values": [
+        [
+          "1",
+          75
+        ],
+        [
+          "1.0",
+          37
+        ],
+        [
+          "0",
+          20
+        ],
+        [
+          "0.0",
+          14
+        ]
+      ],
+      "non_empty_samples": 146
+    },
+    {
+      "field": "mri_small_bowel_report",
+      "type": "string",
+      "distinct_values": 100,
+      "top_values": [
+        [
+          "Normal",
+          4
+        ],
+        [
+          "normal",
+          3
+        ],
+        [
+          "normal No MR evidence of small bowel disease",
+          2
+        ],
+        [
+          "Small bowel normal. Distal colitis/proctitis with diffusion restriction.",
+          1
+        ],
+        [
+          "Difficult study to interpret, clear evidence of mid small bowel obstruction. At the transition point there is an ill defined 7cm fluid collection. Distal small bowel and colon clearly abnormal. Predominant abnormality is blind ending viscus that seems to communicate with distal small bowel rather than caecum.    Following surgery turns out it was appendicitis rather than CD.",
+          1
+        ],
+        [
+          "Normal small bowel.",
+          1
+        ],
+        [
+          "No active small bowel disease",
+          1
+        ],
+        [
+          "No imaging features of active or fibrostricturing IBD.",
+          1
+        ],
+        [
+          "Appearances have not appreciably changed. No active disease in TI. INcreased signal on the long b value DWI sequence corresponding to sigmoid and caecum are similar to previous studies and probably represent some disease activity. No pericolic inflammatory change. No enlarged nodes, fluid or collections. Imp: stable appearances",
+          1
+        ],
+        [
+          "Mild thickening of the caecum and sigmoid colon with mild diffusion restriction. Mildly active colonic disease. No small bowel disease.",
+          1
+        ]
+      ],
+      "non_empty_samples": 106
+    },
+    {
+      "field": "neutrophils",
+      "type": "string",
+      "distinct_values": 425,
+      "top_values": [
+        [
+          "3.5",
+          6
+        ],
+        [
+          "2.5",
+          5
+        ],
+        [
+          "3.6",
+          5
+        ],
+        [
+          "3.7",
+          5
+        ],
+        [
+          "3.71",
+          5
+        ],
+        [
+          "2.9",
+          5
+        ],
+        [
+          "4.36",
+          4
+        ],
+        [
+          "3.54",
+          4
+        ],
+        [
+          "3.62",
+          4
+        ],
+        [
+          "3.14",
+          4
+        ]
+      ],
+      "non_empty_samples": 628
+    },
+    {
+      "field": "nhs_bloods_date",
+      "type": "string",
+      "distinct_values": 568,
+      "top_values": [
+        [
+          "2019-08-14",
+          4
+        ],
+        [
+          "2019-09-11",
+          4
+        ],
+        [
+          "2022-05-25",
+          4
+        ],
+        [
+          "2020-12-02",
+          3
+        ],
+        [
+          "2019-03-13",
+          3
+        ],
+        [
+          "2019-06-05",
+          3
+        ],
+        [
+          "2019-06-19",
+          3
+        ],
+        [
+          "2020-11-18",
+          3
+        ],
+        [
+          "2019-11-19",
+          3
+        ],
+        [
+          "2022-02-17",
+          3
+        ]
+      ],
+      "non_empty_samples": 627
+    },
+    {
+      "field": "pathology_report",
+      "type": "string",
+      "distinct_values": 264,
+      "top_values": [
+        [
+          "Normal",
+          3
+        ],
+        [
+          "Normal path",
+          2
+        ],
+        [
+          "IC valve biopsy: active chronic inflammation in keeping with active IBD  Rest of biopsies within normal limits",
+          1
+        ],
+        [
+          "Mildly active IBD, modified by medical therapy. In keeping with UC",
+          1
+        ],
+        [
+          "TI biopsy - normal  All colonic biopsies - active chronic colitis most severely affecting ascending colon in keeping  with CD",
+          1
+        ],
+        [
+          "Acute ileitis\r\nRight colon, descending, sigmoid and rectum within normal limits\r\nTransverse colon - active chronic colitis",
+          1
+        ],
+        [
+          "TI, caecum, ascending, transverse, descending, sigmoid colon and rectum bx - acute inflammation in keeping with active Crohn's, most severely affecting the transverse, descending and sigmoid.",
+          1
+        ],
+        [
+          "Changes in biopsies are relatively minor and non specific. While not diagnostic they are in keeping with suggested diagnosis of Crohn's disease.",
+          1
+        ],
+        [
+          "Mildly active, patchy, pancolonic IBD with relative rectal sparing.\r\nPericryptal granulomatous inflammation but also occasional granuloma not obviously related to a crypt. \r\nBest regarded as IBD-U at present",
+          1
+        ],
+        [
+          "Mild melanosis coli, otherwise normal.",
+          1
+        ]
+      ],
+      "non_empty_samples": 267
+    },
+    {
+      "field": "platelets",
+      "type": "string",
+      "distinct_values": 306,
+      "top_values": [
+        [
+          "314",
+          9
+        ],
+        [
+          "259",
+          7
+        ],
+        [
+          "317",
+          7
+        ],
+        [
+          "244",
+          6
+        ],
+        [
+          "288",
+          6
+        ],
+        [
+          "334",
+          6
+        ],
+        [
+          "300",
+          6
+        ],
+        [
+          "285",
+          6
+        ],
+        [
+          "325",
+          5
+        ],
+        [
+          "361",
+          5
+        ]
+      ],
+      "non_empty_samples": 626
+    },
+    {
+      "field": "potassium",
+      "type": "string",
+      "distinct_values": 29,
+      "top_values": [
+        [
+          "4.2",
+          77
+        ],
+        [
+          "4.3",
+          69
+        ],
+        [
+          "4.1",
+          65
+        ],
+        [
+          "4.4",
+          64
+        ],
+        [
+          "4.5",
+          48
+        ],
+        [
+          "3.9",
+          46
+        ],
+        [
+          "3.8",
+          42
+        ],
+        [
+          "4.7",
+          26
+        ],
+        [
+          "4.0",
+          26
+        ],
+        [
+          "4.6",
+          23
+        ]
+      ],
+      "non_empty_samples": 623
+    },
+    {
+      "field": "previous_appendicectomy",
+      "type": "string",
+      "distinct_values": 4,
+      "top_values": [
+        [
+          "0.0",
+          203
+        ],
+        [
+          "0",
+          120
+        ],
+        [
+          "1.0",
+          22
+        ],
+        [
+          "1",
+          5
+        ]
+      ],
+      "non_empty_samples": 350
+    },
+    {
+      "field": "previous_tonsillectomy",
+      "type": "int",
+      "distinct_values": 3,
+      "top_values": [
+        [
+          "0",
+          289
+        ],
+        [
+          "1",
+          64
+        ],
+        [
+          "-1000",
+          8
+        ]
+      ],
+      "non_empty_samples": 361
+    },
+    {
+      "field": "sampling_ada",
+      "type": "int",
+      "distinct_values": 2,
+      "top_values": [
+        [
+          "0",
+          351
+        ],
+        [
+          "1",
+          80
+        ]
+      ],
+      "non_empty_samples": 431
+    },
+    {
+      "field": "sampling_asa",
+      "type": "int",
+      "distinct_values": 2,
+      "top_values": [
+        [
+          "0",
+          307
+        ],
+        [
+          "1",
+          135
+        ]
+      ],
+      "non_empty_samples": 442
+    },
+    {
+      "field": "sampling_ifx",
+      "type": "int",
+      "distinct_values": 2,
+      "top_values": [
+        [
+          "0",
+          338
+        ],
+        [
+          "1",
+          91
+        ]
+      ],
+      "non_empty_samples": 429
+    },
+    {
+      "field": "sampling_mtx",
+      "type": "int",
+      "distinct_values": 2,
+      "top_values": [
+        [
+          "0",
+          379
+        ],
+        [
+          "1",
+          5
+        ]
+      ],
+      "non_empty_samples": 384
+    },
+    {
+      "field": "sampling_uste",
+      "type": "int",
+      "distinct_values": 2,
+      "top_values": [
+        [
+          "0",
+          374
+        ],
+        [
+          "1",
+          46
+        ]
+      ],
+      "non_empty_samples": 420
+    },
+    {
+      "field": "sampling_vedo",
+      "type": "int",
+      "distinct_values": 2,
+      "top_values": [
+        [
+          "0",
+          362
+        ],
+        [
+          "1",
+          62
+        ]
+      ],
+      "non_empty_samples": 424
+    },
+    {
+      "field": "sex",
+      "type": "string",
+      "distinct_values": 2,
+      "top_values": [
+        [
+          "male",
+          206
+        ],
+        [
+          "female",
+          186
+        ]
+      ],
+      "non_empty_samples": 392
+    },
+    {
+      "field": "sodium",
+      "type": "int",
+      "distinct_values": 18,
+      "top_values": [
+        [
+          "139",
+          120
+        ],
+        [
+          "140",
+          116
+        ],
+        [
+          "138",
+          95
+        ],
+        [
+          "141",
+          90
+        ],
+        [
+          "137",
+          70
+        ],
+        [
+          "142",
+          48
+        ],
+        [
+          "136",
+          35
+        ],
+        [
+          "143",
+          23
+        ],
+        [
+          "135",
+          13
+        ],
+        [
+          "134",
+          8
+        ]
+      ],
+      "non_empty_samples": 633
+    },
+    {
+      "field": "study_center",
+      "type": "string",
+      "distinct_values": 4,
+      "top_values": [
+        [
+          "edinburgh",
+          484
+        ],
+        [
+          "glasgow",
+          81
+        ],
+        [
+          "aberdeen",
+          20
+        ],
+        [
+          "dundee",
+          6
+        ]
+      ],
+      "non_empty_samples": 591
+    },
+    {
+      "field": "study_group",
+      "type": "string",
+      "distinct_values": 4,
+      "top_values": [
+        [
+          "cd",
+          175
+        ],
+        [
+          "uc",
+          144
+        ],
+        [
+          "non_ibd",
+          44
+        ],
+        [
+          "ibdu",
+          23
+        ]
+      ],
+      "non_empty_samples": 386
+    },
+    {
+      "field": "study_id",
+      "type": "string",
+      "distinct_values": 333,
+      "top_values": [
+        [
+          "MID-90-1",
+          5
+        ],
+        [
+          "MID-90-2",
+          5
+        ],
+        [
+          "MID-90-3",
+          5
+        ],
+        [
+          "MID-90-4",
+          5
+        ],
+        [
+          "MID-90-5",
+          5
+        ],
+        [
+          "MID-90-6",
+          5
+        ],
+        [
+          "MID-90-7",
+          5
+        ],
+        [
+          "MID-90-8",
+          5
+        ],
+        [
+          "MID-90-9",
+          5
+        ],
+        [
+          "MID-90-10",
+          5
+        ]
+      ],
+      "non_empty_samples": 678
+    },
+    {
+      "field": "urea",
+      "type": "string",
+      "distinct_values": 81,
+      "top_values": [
+        [
+          "3.2",
+          25
+        ],
+        [
+          "3.6",
+          23
+        ],
+        [
+          "4.6",
+          23
+        ],
+        [
+          "4.4",
+          22
+        ],
+        [
+          "4.9",
+          21
+        ],
+        [
+          "4.5",
+          20
+        ],
+        [
+          "3.8",
+          20
+        ],
+        [
+          "4.1",
+          20
+        ],
+        [
+          "3.4",
+          19
+        ],
+        [
+          "3.3",
+          19
+        ]
+      ],
+      "non_empty_samples": 607
+    },
+    {
+      "field": "weight",
+      "type": "string",
+      "distinct_values": 422,
+      "top_values": [
+        [
+          "65.5",
+          9
+        ],
+        [
+          "67",
+          7
+        ],
+        [
+          "64",
+          6
+        ],
+        [
+          "58",
+          6
+        ],
+        [
+          "91",
+          5
+        ],
+        [
+          "55",
+          5
+        ],
+        [
+          "68",
+          5
+        ],
+        [
+          "75",
+          5
+        ],
+        [
+          "83",
+          4
+        ],
+        [
+          "0",
+          4
+        ]
+      ],
+      "non_empty_samples": 660
+    },
+    {
+      "field": "white_cell_count",
+      "type": "string",
+      "distinct_values": 145,
+      "top_values": [
+        [
+          "7.2",
+          18
+        ],
+        [
+          "6.9",
+          17
+        ],
+        [
+          "7.3",
+          15
+        ],
+        [
+          "5.6",
+          15
+        ],
+        [
+          "6.3",
+          15
+        ],
+        [
+          "5.9",
+          14
+        ],
+        [
+          "6.7",
+          13
+        ],
+        [
+          "6.1",
+          12
+        ],
+        [
+          "4.8",
+          12
+        ],
+        [
+          "7.1",
+          12
+        ]
+      ],
+      "non_empty_samples": 628
+    }
+  ],
+  "headers": {
+    "gidamps": [
+      "study_id",
+      "redcap_repeat_instance",
+      "sampling_date",
+      "sampling_setting",
+      "comment",
+      "has_active_symptoms",
+      "symptoms_description",
+      "sccai_general_well_being",
+      "sccai_bowel_frequency_day",
+      "sccai_bowel_frequency_night",
+      "sccai_urgency",
+      "sccai_blood_in_stool",
+      "sccai_arthralgia",
+      "sccai_uveitis",
+      "sccai_erythema_nodosum",
+      "sccai_pyoderma",
+      "sccai_total",
+      "hbi_total",
+      "hbi_arthralgia",
+      "hbi_uveitis",
+      "hbi_erythema_nodosum",
+      "hbi_apthous_ulcers",
+      "hbi_pyoderma",
+      "hbi_anal_fissures",
+      "hbi_new_fistula",
+      "hbi_abscess",
+      "hbi_liquid_stools",
+      "hbi_abdominal_mass",
+      "hbi_general_well_being",
+      "hbi_abdominal_pain",
+      "nhs_bloods_date",
+      "haemoglobin",
+      "haematocrit",
+      "red_cell_count",
+      "white_cell_count",
+      "neutrophils",
+      "lymphocytes",
+      "monocytes",
+      "basophils",
+      "eosinophils",
+      "platelets",
+      "urea",
+      "sodium",
+      "potassium",
+      "creatinine",
+      "egfr",
+      "crp",
+      "albumin",
+      "calprotectin_date",
+      "calprotectin",
+      "drug_level_date",
+      "ada_level",
+      "ada_antibody",
+      "ifx_level",
+      "ifx_antibody",
+      "sampling_steroids",
+      "steroids_detail",
+      "iv_steroids",
+      "iv_steroids_day",
+      "rescue_therapy",
+      "rescue_therapy_detail",
+      "sampling_asa",
+      "sampling_aza",
+      "sampling_mp",
+      "sampling_ifx",
+      "sampling_ada",
+      "sampling_vedo",
+      "sampling_uste",
+      "sampling_tofa",
+      "sampling_mtx",
+      "sampling_goli",
+      "sampling_ciclosporin",
+      "sampling_filgo",
+      "sampling_upa",
+      "sampling_risa",
+      "sampling_abx",
+      "antibiotics_detail",
+      "medication_comments",
+      "endoscopy_date",
+      "endoscopy_report",
+      "pathology_report",
+      "mayo_total",
+      "uceis_total",
+      "sescd_total",
+      "endoscopy_active",
+      "radiology_test_date",
+      "ct_abdomen",
+      "mri_small_bowel",
+      "mri_pelvis",
+      "ct_abdomen_report",
+      "mri_small_bowel_report",
+      "mri_pelvis_report",
+      "radiology_comments",
+      "radiology_active",
+      "ibd_status",
+      "endoscopy_type",
+      "study_group",
+      "diagnosis_note",
+      "baseline_recruitment_type",
+      "age",
+      "sex",
+      "height",
+      "weight",
+      "bmi",
+      "date_of_diagnosis",
+      "age_at_diagnosis",
+      "new_diagnosis_of_ibd",
+      "montreal_uc_extent",
+      "montreal_uc_severity",
+      "baseline_eims_arthralgia",
+      "baseline_eims_ank_spon",
+      "baseline_eims_erythema_nodosum",
+      "baseline_eims_pyoderma",
+      "baseline_eims_uveitis",
+      "baseline_eims_episcleritis",
+      "baseline_eims_sacroileitis",
+      "baseline_eims_none",
+      "past_medical_history",
+      "past_medical_history_detail",
+      "past_ibd_surgery",
+      "past_ibd_surgery_detail",
+      "ifx",
+      "ciclo",
+      "ifx_start",
+      "ciclo_start",
+      "ifx_stop",
+      "ciclo_stop",
+      "ada",
+      "ada_start",
+      "ada_stop",
+      "vedo",
+      "vedo_start",
+      "vedo_stop",
+      "uste",
+      "uste_start",
+      "uste_stop",
+      "tofa",
+      "tofa_start",
+      "tofa_stop",
+      "golim",
+      "golim_start",
+      "golim_stop",
+      "filgo",
+      "filgo_start",
+      "filgo_stop",
+      "upa",
+      "upa_start",
+      "upa_stop",
+      "risa",
+      "risa_start",
+      "risa_stop",
+      "aza",
+      "aza_start",
+      "aza_stop",
+      "mp",
+      "mp_start",
+      "mp_stop",
+      "mtx",
+      "mtx_start",
+      "mtx_stop",
+      "gi_questionnaire_date",
+      "giq_ethnicity",
+      "giq_ethicity_text",
+      "giq_are_you_in_good_health",
+      "giq_long_term_medication",
+      "giq_long_term_medication_text",
+      "smoking_status",
+      "giq_smoking_status_at_diagnosis",
+      "giq_strenous_exercise_last_48h",
+      "giq_strenous_exercise_last_48h_text",
+      "giq_do_you_drink_alcohol",
+      "giq_alcohol_consumption",
+      "family_history_of_ibd",
+      "family_history_relationship",
+      "family_history_diagnosis",
+      "other_family_diagnosis",
+      "previous_tonsillectomy",
+      "age_or_year_of_tonsillectomy",
+      "previous_appendicectomy",
+      "age_or_year_of_appendicectomy",
+      "patient_reported_health_status",
+      "participant_questionnaire_comments",
+      "diagnosis_duration_in_days",
+      "montreal_cd_behaviour",
+      "montreal_perianal",
+      "montreal_cd_location",
+      "montreal_upper_gi",
+      "baseline_thiopurine_exposure",
+      "baseline_anti_tnf_exposure",
+      "baseline_biologic_exposure",
+      "baseline_jak_exposure",
+      "study_center",
+      "cucq_1",
+      "cucq_2",
+      "cucq_3",
+      "cucq_4",
+      "cucq_5",
+      "cucq_6",
+      "cucq_7",
+      "cucq_8",
+      "cucq_9",
+      "cucq_10",
+      "cucq_11",
+      "cucq_12",
+      "cucq_13",
+      "cucq_14",
+      "cucq_15",
+      "cucq_16",
+      "cucq_17",
+      "cucq_18",
+      "cucq_19",
+      "cucq_20",
+      "cucq_21",
+      "cucq_22",
+      "cucq_23",
+      "cucq_24",
+      "cucq_25",
+      "cucq_26",
+      "cucq_27",
+      "cucq_28",
+      "cucq_29",
+      "cucq_30",
+      "cucq_31",
+      "cucq_32",
+      "cucq_comments",
+      "cucq_total",
+      "cucq32_complete"
+    ],
+    "music": [
+      "study_id",
+      "redcap_event_name",
+      "age",
+      "sex",
+      "study_group",
+      "diagnosis_comments",
+      "date_of_diagnosis",
+      "age_at_diagnosis",
+      "cucq_date",
+      "cucq_1",
+      "cucq_2",
+      "cucq_3",
+      "cucq_4",
+      "cucq_5",
+      "cucq_6",
+      "cucq_7",
+      "cucq_8",
+      "cucq_9",
+      "cucq_10",
+      "cucq_11",
+      "cucq_12",
+      "cucq_13",
+      "cucq_14",
+      "cucq_15",
+      "cucq_16",
+      "cucq_17",
+      "cucq_18",
+      "cucq_19",
+      "cucq_20",
+      "cucq_21",
+      "cucq_22",
+      "cucq_23",
+      "cucq_24",
+      "cucq_25",
+      "cucq_26",
+      "cucq_27",
+      "cucq_28",
+      "cucq_29",
+      "cucq_30",
+      "cucq_31",
+      "cucq_32",
+      "proms_comments",
+      "smoking_status",
+      "when_smoking_stopped",
+      "when_smoking_stopped_units",
+      "height",
+      "weight",
+      "bmi",
+      "has_active_symptoms",
+      "visit_date",
+      "physician_global_assessment",
+      "disease_activity",
+      "symptoms_description",
+      "cucq_total",
+      "change_in_montreal",
+      "disease_activity_score_date",
+      "hbi_general_well_being",
+      "hbi_abdominal_pain",
+      "hbi_abdominal_mass",
+      "hbi_liquid_stools_present",
+      "hbi_liquid_stools",
+      "hbi_no_complications",
+      "hbi_arthralgia",
+      "hbi_uveitis",
+      "hbi_erythema_nodosum",
+      "hbi_apthous_ulcers",
+      "hbi_pyoderma",
+      "hbi_anal_fissures",
+      "hbi_new_fistula",
+      "hbi_abscess",
+      "sccai_bowel_frequency_day",
+      "sccai_bowel_frequency_night",
+      "sccai_urgency",
+      "sccai_blood_in_stool",
+      "sccai_general_well_being",
+      "sccai_no_complications",
+      "sccai_erythema_nodosum",
+      "sccai_pyoderma",
+      "sccai_arthralgia",
+      "sccai_uveitis",
+      "sccai_total",
+      "hbi_total",
+      "disease_activity_score_comments",
+      "mayo_stool_frequency",
+      "mayo_rectal_bleeding",
+      "mayo_physician_global_assessment",
+      "mayo_total",
+      "unplanned_hospital_admission",
+      "new_flare_up",
+      "flare_up_1_date",
+      "flare_up_1_description",
+      "flare_up_1_management_community",
+      "flare_up_1_management_inpatient",
+      "flare_up_1_management_oral_steroids",
+      "flare_up_1_management_asa",
+      "flare_up_1_management_dietetics",
+      "flare_up_1_management_other",
+      "flare_up_1_management_other_text",
+      "flare_up_2_date",
+      "flare_up_2_description",
+      "flare_up_2_management_community",
+      "flare_up_2_management_inpatient",
+      "flare_up_2_management_oral_steroids",
+      "flare_up_2_management_asa",
+      "flare_up_2_management_dietetics",
+      "flare_up_2_management_other",
+      "flare_up_2_management_other_text",
+      "flare_up_comments",
+      "steroid_use_1_reason",
+      "steroid_use_1_reason_text",
+      "steroid_use_1_drug",
+      "steroid_use_1_dose",
+      "steroid_use_1_frequency",
+      "steroid_use_1_frequency_text",
+      "steroid_use_1_start_date",
+      "steroid_use_1_still_taking",
+      "steroid_use_1_end_date",
+      "steroid_use_1_reason_stopped",
+      "steroid_use_1_reason_changed_text",
+      "steroid_use_2_reason",
+      "steroid_use_2_drug",
+      "steroid_use_2_dose",
+      "steroid_use_2_frequency",
+      "steroid_use_2_frequency_text",
+      "steroid_use_2_start_date",
+      "steroid_use_2_still_taking",
+      "steroid_use_2_end_date",
+      "steroid_use_2_reason_stopped",
+      "steroid_use_2_reason_changed_text",
+      "hospital_admission_1_for_acute_severe_colitis",
+      "hospital_admission_1_for_ibd_flare_not_asc",
+      "hospital_admission_1_for_perianal_disease",
+      "hospital_admission_1_for_surgery",
+      "hospital_admission_1_for_investigation_not_meeting_other_criteria",
+      "hospital_admission_1_for_other",
+      "hospital_admission_1_for_other_text",
+      "hospital_admission_2_for_other_text",
+      "hospital_admission_2_for_acute_severe_colitis",
+      "hospital_admission_2_for_ibd_flare_not_asc",
+      "hospital_admission_2_for_perianal_disease",
+      "hospital_admission_2_for_surgery",
+      "hospital_admission_2_for_investigation_not_meeting_other_criteria",
+      "hospital_admission_2_for_other",
+      "hospital_admission_1_admission_date",
+      "hospital_admission_2_admission_date",
+      "hospital_admission_1_discharge_date",
+      "hospital_admission_2_discharge_date",
+      "hospital_admission_comments",
+      "new_oral_steroids_since_last_visit",
+      "montreal_classification_date",
+      "montreal_cd_location",
+      "montreal_cd_behaviour",
+      "montreal_perianal",
+      "montreal_upper_gi",
+      "montreal_uc_extent",
+      "montreal_uc_severity",
+      "montreal_classification_comments",
+      "baseline_previous_ibd_treatment",
+      "baseline_eims_arthralgia",
+      "baseline_eims_ank_spon",
+      "baseline_eims_erythema_nodosum",
+      "baseline_eims_pyoderma",
+      "baseline_eims_uveitis",
+      "baseline_eims_episcleritis",
+      "baseline_eims_none",
+      "baseline_eims_iritis_scleritis",
+      "baseline_eims_sacroileitis",
+      "baseline_eims_conjunctivitis",
+      "baseline_eims_angular_cheilitis",
+      "baseline_eims_other",
+      "baseline_eims_other_text",
+      "baseline_surgical_history",
+      "endoscopy_prior_to_recruitment_date",
+      "endoscopy_prior_to_recruitment_colonoscopy",
+      "endoscopy_prior_to_recruitment_flexible_sigmoidoscopy",
+      "endoscopy_prior_to_recruitment_report",
+      "endoscopy_prior_to_recruitment_mayo_score",
+      "endoscopy_prior_to_recruitment_uceis_score",
+      "radiology_prior_to_recruitment_date",
+      "radiology_prior_to_recruitment_ctap",
+      "radiology_prior_to_recruitment_mri_sb",
+      "radiology_prior_to_recruitment_mri_pelvis",
+      "radiology_prior_to_recruitment_report",
+      "histology_prior_to_recruitment_date",
+      "histology_prior_to_recruitment_report",
+      "surgical_history_number",
+      "surgical_history_1_date",
+      "surgical_history_1_report",
+      "surgical_history_2_date",
+      "surgical_history_2_report",
+      "surgical_history_3_date",
+      "surgical_history_3_report",
+      "phenotyping_comments",
+      "previous_appendicectomy",
+      "previous_tonsillectomy",
+      "appendicectomy_age",
+      "tonsillectomy_age",
+      "pmh_1_start_date",
+      "pmh_1_end_date",
+      "pmh_1_diagnosis",
+      "pmh_2_start_date",
+      "pmh_2_end_date",
+      "pmh_2_diagnosis",
+      "pmh_3_start_date",
+      "pmh_3_end_date",
+      "pmh_3_diagnosis",
+      "pmh_4_start_date",
+      "pmh_4_end_date",
+      "pmh_4_diagnosis",
+      "pmh_5_start_date",
+      "pmh_5_end_date",
+      "pmh_5_diagnosis",
+      "pmh_comments",
+      "fh_number_brothers",
+      "fh_number_sisters",
+      "fh_number_siblings",
+      "fh_number_daughters",
+      "fh_number_sons",
+      "fh_number_children",
+      "fh_of_ibd_present",
+      "fh_of_ibd_number_affected",
+      "fh_1_relationship",
+      "fh_1_age_at_diagnosis",
+      "fh_1_diagnosis",
+      "fh_1_diagnosis_other",
+      "fh_2_relationship",
+      "fh_2_age_at_diagnosis",
+      "fh_2_diagnosis",
+      "fh_3_relationship",
+      "fh_3_age_at_diagnosis",
+      "fh_3_diagnosis",
+      "fh_3_diagnosis_other",
+      "fh_4_relationship",
+      "fh_4_age_at_diagnosis",
+      "fh_4_diagnosis",
+      "fh_comments",
+      "endoscopy_date",
+      "endoscopy_type_colonoscopy",
+      "endoscopy_type_flexible_sigmoidoscopy",
+      "upload_endoscopic_image",
+      "endoscopy_report",
+      "pathology_report",
+      "mayo_endoscopic_score",
+      "uceis",
+      "sescd",
+      "physician_endoscopic_severity",
+      "endoscopy_comments",
+      "endoscopic_mucosal_healing",
+      "complete_mucosal_healing",
+      "radiology_test_date",
+      "ct_abdomen_pelvis",
+      "axr",
+      "uss_abdomen",
+      "mri_small_bowel",
+      "mri_pelvis",
+      "ct_abdomen_pelvis_report",
+      "axr_report",
+      "uss_abdomen_report",
+      "mri_small_bowel_report",
+      "mri_pelvis_report",
+      "radiology_report_summary",
+      "nonibd_surgery_date_si",
+      "plan_ibd_procedure_type",
+      "ibd_surgery_performed",
+      "ibd_surgery_date",
+      "ibd_surgery_procedure",
+      "ibd_surgery_procedure_other",
+      "ibd_surgery_procedure_other_text",
+      "ibd_surgery_comments",
+      "ibd_surgery_histology_report",
+      "saliva_sample_complete",
+      "sampling_imm",
+      "sampling_tnf",
+      "sampling_jaki",
+      "sampling_steroids",
+      "sampling_abx",
+      "sampling_asa",
+      "sampling_ppi",
+      "sampling_steroid_details",
+      "sampling_aza",
+      "sampling_mp",
+      "sampling_ifx",
+      "sampling_ada",
+      "sampling_vedo",
+      "sampling_uste",
+      "sampling_tofa",
+      "sampling_mtx",
+      "sampling_goli",
+      "sampling_ciclosporin",
+      "sampling_filgo",
+      "sampling_upa",
+      "sampling_risa",
+      "baseline_asa",
+      "baseline_mtx",
+      "baseline_ifx",
+      "baseline_ada",
+      "baseline_aza",
+      "baseline_mp",
+      "baseline_uste",
+      "baseline_vedo",
+      "baseline_goli",
+      "baseline_tofa",
+      "baseline_filgo",
+      "baseline_risa",
+      "qfit_result",
+      "qfit_result_date",
+      "albumin",
+      "crp",
+      "nhs_bloods_date",
+      "haemoglobin",
+      "red_cell_count",
+      "haematocrit",
+      "white_cell_count",
+      "neutrophils",
+      "lymphocytes",
+      "monocytes",
+      "eosinophils",
+      "basophils",
+      "platelets",
+      "egfr",
+      "qfit_comment",
+      "urea",
+      "creatinine",
+      "sodium",
+      "potassium",
+      "bilirubin",
+      "calprotectin_date",
+      "calprotectin",
+      "drug_level_date",
+      "ada_level",
+      "ada_antibody",
+      "ifx_level",
+      "ifx_antibody",
+      "lab_tests_comments",
+      "saliva_rev_date",
+      "saliva_sample",
+      "saliva_setting",
+      "sample_date",
+      "saliva_eim",
+      "eims_details",
+      "saliva_abx",
+      "abx_detail",
+      "saliva_abx3m",
+      "abx3m_detail",
+      "saliva_piercing",
+      "saliva_brushing",
+      "saliva_brush_tongue",
+      "saliva_dietibd",
+      "diet_details",
+      "saliva_cs",
+      "saliva_denture",
+      "dentures_details",
+      "comments_saliva",
+      "fh_2_diagnosis_other",
+      "fh_4_diagnosis_other",
+      "fh_2_diagnosis_other_text",
+      "surgical_history_1_procedure",
+      "surgical_history_2_procedure",
+      "surgical_history_3_procedure",
+      "study_center",
+      "endoscopic_mucosal_healing_at_3_6_months",
+      "complete_mucosal_healing_at_3_6_months",
+      "endoscopic_mucosal_healing_at_12_months",
+      "complete_mucosal_healing_at_12_months",
+      "cd_pro2_raw",
+      "cd_pro2_weighted",
+      "uc_pro2",
+      "ibdresponse_criteria_cd_met",
+      "ibdresponse_criteria_uc_met"
+    ],
+    "mini_music": [
+      "study_id",
+      "redcap_event_name",
+      "study_center",
+      "age",
+      "patient_age_group",
+      "sex",
+      "study_group",
+      "new_diagnosis_of_ibd",
+      "diagnosis_comments",
+      "date_of_diagnosis",
+      "age_at_diagnosis",
+      "fatigue_severity",
+      "fatigue_standard_error",
+      "fatigue_tscore",
+      "promis_fatigue_score",
+      "impact3_score",
+      "impact_wellbeing",
+      "impact_emotional",
+      "impact_social",
+      "impact_bodyimage",
+      "pucai_score",
+      "pucai_pain",
+      "pucai_bleeding",
+      "pucai_consistency",
+      "pucai_stools",
+      "pucai_nocturnal",
+      "pucai_activity",
+      "pcdai_pain",
+      "pcdai_general",
+      "pcdai_frequency",
+      "pcdai_esr",
+      "pcdai_alb",
+      "pcdai_weight",
+      "pcdai_perianal",
+      "pcdai_eim",
+      "pcdai_eim_fever",
+      "pcdai_eim_arthritis",
+      "pcdai_eim_uveitis",
+      "pcdai_eim_erythema_nodosum",
+      "pcdai_eim_pyoderma",
+      "pcdai_eim_other",
+      "pcdai_score",
+      "cdparis_upper_gi",
+      "cdparis_behaviour",
+      "cdparis_location",
+      "cdparis_growth",
+      "cdparis_perianal",
+      "ucparis_severity",
+      "ucparis_extent",
+      "een_use",
+      "een_formula_type",
+      "een_formula_type_text",
+      "een_start_date",
+      "een_end_date",
+      "een_still_taken",
+      "height",
+      "weight",
+      "bmi",
+      "has_active_symptoms",
+      "physician_global_assessment",
+      "disease_activity",
+      "symptoms_abdominal_pain",
+      "symptoms_diarrhoea",
+      "symptoms_urgency",
+      "symptoms_pr_bleeding",
+      "symptoms_weight_loss",
+      "symptoms_fatigue",
+      "symptoms_perianal",
+      "symptoms_other_text",
+      "impact3_total",
+      "paris_change",
+      "disease_activity_score_comments",
+      "unplanned_hospital_admission",
+      "new_flare_up",
+      "flare_up_1_date",
+      "flare_up_1_description_abdominal_pain",
+      "flare_up_1_description_diarrhoea",
+      "flare_up_1_description_urgency",
+      "flare_up_1_description_pr_bleeding",
+      "flare_up_1_description_weight_loss",
+      "flare_up_1_description_fever",
+      "flare_up_1_description_perianal",
+      "flare_up_1_setting",
+      "flare_up_2_setting",
+      "flare_up_1_management_iv_steroids",
+      "flare_up_1_management_oral_steroids",
+      "flare_up_1_management_een",
+      "flare_up_1_management_new_biologic",
+      "flare_up_1_management_other",
+      "flare_up_1_management_other_text",
+      "flare_up_2_date",
+      "flare_up_2_description_abdominal_pain",
+      "flare_up_2_description_diarrhoea",
+      "flare_up_2_description_urgency",
+      "flare_up_2_description_pr_bleeding",
+      "flare_up_2_description_weight_loss",
+      "flare_up_2_description_fever",
+      "flare_up_2_description_perianal",
+      "flare_up_2_management_iv_steroids",
+      "flare_up_2_management_oral_steroids",
+      "flare_up_2_management_een",
+      "flare_up_2_management_new_biologic",
+      "flare_up_2_management_other",
+      "flare_up_comments",
+      "steroid_use_1_reason",
+      "steroid_use_1_reason_text",
+      "steroid_use_1_drug",
+      "steroid_use_1_start_date",
+      "steroid_use_1_still_taking",
+      "steroid_use_1_end_date",
+      "steroid_use_1_reason_stopped",
+      "steroid_use_1_reason_changed_text",
+      "steroid_use_2_reason",
+      "steroid_use_2_drug",
+      "steroid_use_2_start_date",
+      "steroid_use_2_still_taking",
+      "steroid_use_2_end_date",
+      "steroid_use_2_reason_stopped",
+      "hospital_admission_1_for_acute_severe_colitis",
+      "hospital_admission_1_for_ibd_flare_not_asc",
+      "hospital_admission_1_for_perianal_disease",
+      "hospital_admission_1_for_surgery",
+      "hospital_admission_1_for_investigation_not_meeting_other_criteria",
+      "hospital_admission_1_for_other",
+      "hospital_admission_1_for_other_text",
+      "hospital_admission_2_for_acute_severe_colitis",
+      "hospital_admission_2_for_ibd_flare_not_asc",
+      "hospital_admission_2_for_perianal_disease",
+      "hospital_admission_2_for_surgery",
+      "hospital_admission_2_for_investigation_not_meeting_other_criteria",
+      "hospital_admission_2_for_other",
+      "hospital_admission_1_admission_date",
+      "hospital_admission_1_discharge_date",
+      "hospital_admission_comments",
+      "new_oral_steroids_since_last_visit",
+      "baseline_previous_ibd_treatment",
+      "baseline_eims_none",
+      "baseline_eims_arthritis",
+      "baseline_eims_erythema_nodosum",
+      "baseline_eims_pyoderma",
+      "baseline_eims_uveitis",
+      "baseline_eims_episcleritis",
+      "baseline_eims_iritis_scleritis",
+      "baseline_eims_sacroileitis",
+      "baseline_eims_conjunctivitis",
+      "baseline_eims_angular_cheilitis",
+      "baseline_eims_other",
+      "baseline_ibd_drug_1",
+      "baseline_ibd_drug_1_other",
+      "baseline_ibd_drug_1_other_text",
+      "baseline_ibd_drug_1_dose",
+      "baseline_ibd_drug_1_frequency",
+      "baseline_ibd_drug_1_start_date",
+      "baseline_ibd_drug_1_end_date",
+      "baseline_ibd_drug_1_reason_stopped",
+      "baseline_ibd_drug_1_reason_stopped_text",
+      "baseline_ibd_drug_2",
+      "baseline_ibd_drug_2_other",
+      "baseline_ibd_drug_2_other_text",
+      "baseline_ibd_drug_2_dose",
+      "baseline_ibd_drug_2_frequency",
+      "baseline_ibd_drug_2_start_date",
+      "baseline_ibd_drug_2_end_date",
+      "baseline_ibd_drug_2_reason_stopped",
+      "baseline_ibd_drug_3",
+      "baseline_ibd_drug_3_dose",
+      "baseline_ibd_drug_3_frequency",
+      "baseline_ibd_drug_3_frequency_other",
+      "baseline_ibd_drug_3_start_date",
+      "baseline_ibd_drug_3_end_date",
+      "baseline_ibd_drug_3_reason_stopped",
+      "baseline_ibd_drug_3_reason_stopped_text",
+      "surgery_histology_comments",
+      "previous_appendicectomy",
+      "previous_tonsillectomy",
+      "baseline_eims_psc",
+      "appendicectomy_age",
+      "tonsillectomy_age",
+      "pmh_1_diagnosis",
+      "pmh_1_active",
+      "pmh_2_active",
+      "pmh_4_active",
+      "pmh_3_active",
+      "pmh_2_diagnosis",
+      "pmh_3_diagnosis",
+      "pmh_4_diagnosis",
+      "pmh_comments",
+      "fh_number_brothers",
+      "fh_number_sisters",
+      "fh_number_siblings",
+      "fh_of_ibd_present",
+      "fh_of_ibd_number_affected",
+      "fh_1_relationship",
+      "fh_1_age_at_diagnosis",
+      "fh_1_diagnosis",
+      "fh_1_diagnosis_other",
+      "fh_1_diagnosis_other_text",
+      "fh_2_relationship",
+      "fh_2_age_at_diagnosis",
+      "fh_2_diagnosis",
+      "fh_2_diagnosis_other",
+      "fh_2_diagnosis_other_text",
+      "fh_3_relationship",
+      "fh_3_age_at_diagnosis",
+      "fh_3_diagnosis",
+      "fh_4_relationship",
+      "fh_4_age_at_diagnosis",
+      "fh_4_diagnosis",
+      "fh_4_diagnosis_other",
+      "fh_4_diagnosis_other_text",
+      "fh_comments",
+      "sampling_on_no_meds",
+      "sampling_asa",
+      "sampling_een",
+      "sampling_steroids_oral",
+      "sampling_steroids_iv",
+      "sampling_steroids_topical",
+      "sampling_imm",
+      "sampling_mtx",
+      "sampling_ifx",
+      "sampling_ada",
+      "sampling_vedo",
+      "sampling_uste",
+      "sampling_other",
+      "sampling_other_text",
+      "ibd_drug_1_reason_stopped",
+      "ibd_drug_1_name",
+      "ibd_drug_1_name_other",
+      "ibd_drug_1_dose",
+      "ibd_drug_1_frequency",
+      "ibd_drug_1_frequency_other",
+      "ibd_drug_1_start_date",
+      "ibd_drug_1_end_date",
+      "ibd_drug_1_reason_stopped_text",
+      "ibd_drug_2_name",
+      "ibd_drug_2_name_other",
+      "ibd_drug_2_dose",
+      "ibd_drug_2_frequency",
+      "ibd_drug_2_frequency_other",
+      "ibd_drug_2_start_date",
+      "ibd_drug_2_still_taking",
+      "ibd_drug_1_still_taking",
+      "ibd_drug_2_end_date",
+      "ibd_drug_2_reason_stopped",
+      "ibd_drug_2_reason_stopped_text",
+      "ibd_drug_3_name",
+      "ibd_drug_3_name_other",
+      "ibd_drug_3_dose",
+      "ibd_drug_3_frequency",
+      "ibd_drug_3_start_date",
+      "ibd_drug_3_still_taking",
+      "ibd_drug_3_end_date",
+      "ibd_drug_3_reason_stopped",
+      "ibd_drug_3_reason_stopped_text",
+      "ibd_drug_4_name",
+      "ibd_drug_4_name_other",
+      "ibd_drug_4_dose",
+      "ibd_drug_4_frequency",
+      "ibd_drug_4_start_date",
+      "ibd_drug_4_still_taking",
+      "ibd_drug_4_end_date",
+      "ibd_drug_4_reason_stopped",
+      "ibd_drug_4_reason_stopped_text",
+      "ibd_drug_5_name",
+      "ibd_drug_5_name_other",
+      "ibd_drug_5_dose",
+      "ibd_drug_5_frequency",
+      "ibd_drug_5_start_date",
+      "ibd_drug_5_still_taking",
+      "ibd_drug_5_end_date",
+      "ibd_drug_5_reason_stopped",
+      "ibd_drug_5_reason_stopped_text",
+      "drug_5",
+      "drug_dose_5",
+      "currently_frequency_use_5",
+      "drug_startdate_5",
+      "still_taken_drug5",
+      "drug_enddate_5",
+      "reason_stop_drug_5",
+      "bpt_other_reason_5",
+      "concomitant_non_ibd_drug",
+      "concomitant_drug_1_name",
+      "concomitant_drug_1_name_other",
+      "concomitant_drug_1_dose",
+      "concomitant_drug_1_frequency",
+      "concomitant_drug_1_frequency_other",
+      "concomitant_drug_2_name",
+      "concomitant_drug_2_name_other",
+      "concomitant_drug_2_dose",
+      "concomitant_drug_2_frequency",
+      "concomitant_drug_2_frequency_other",
+      "concomitant_drug_3_name",
+      "concomitant_drug_3_name_other",
+      "concomitant_drug_3_dose",
+      "concomitant_drug_3_frequency",
+      "concomitant_drug_4_name",
+      "concomitant_drug_4_name_other",
+      "concomitant_drug_4_dose",
+      "concomitant_drug_4_frequency",
+      "concomitant_drug_5_name",
+      "concomitant_drug_5_name_other",
+      "concomitant_drug_5_dose",
+      "concomitant_drug_5_frequency",
+      "concomitant_drug_5_frequency_other",
+      "current_drugs_comments",
+      "endoscopy_date",
+      "endoscopy_type_colonoscopy",
+      "endoscopy_type_upper_gi_endoscopy",
+      "endoscopy_report",
+      "pathology_report",
+      "mayo_endoscopic_findings",
+      "sescd_calc",
+      "sescd_noncalc",
+      "physician_endoscopic_severity",
+      "ct_abdomen_pelvis",
+      "axr",
+      "uss_abdomen",
+      "mri_small_bowel",
+      "mri_pelvis",
+      "uss_abdomen_date",
+      "uss_abdomen_report",
+      "mri_small_bowel_date",
+      "mri_small_bowel_report",
+      "mrip_date",
+      "mrip_report",
+      "ibd_surgery_performed",
+      "saliva_sample",
+      "saliva_setting",
+      "sample_date",
+      "saliva_eim",
+      "eims_details",
+      "saliva_abx",
+      "abx_detail",
+      "saliva_abx3m",
+      "abx3m_detail",
+      "saliva_piercing",
+      "saliva_brushing",
+      "saliva_brush_tongue",
+      "saliva_dietibd",
+      "saliva_diet_details",
+      "saliva_cs",
+      "saliva_denture",
+      "dentures_details",
+      "comments_saliva",
+      "gapdh",
+      "nd2",
+      "cfdna_haemolysis",
+      "cfdna_qubit",
+      "esr",
+      "albumin",
+      "crp",
+      "nhs_bloods_date",
+      "haemoglobin",
+      "mcv",
+      "haematocrit",
+      "white_cell_count",
+      "neutrophils",
+      "lymphocytes",
+      "monocytes",
+      "eosinophils",
+      "basophils",
+      "platelets",
+      "urea",
+      "creatinine",
+      "sodium",
+      "potassium",
+      "bilirubin",
+      "calprotectin_date",
+      "calprotectin",
+      "other_drug_level",
+      "drug_level_date",
+      "ada_level",
+      "ada_antibody",
+      "ifx_level",
+      "ifx_antibody",
+      "drug_level_other",
+      "lab_tests_comments",
+      "impactq1",
+      "impactq2",
+      "impactq3",
+      "impactq4",
+      "impactq5",
+      "impactq6",
+      "impactq7",
+      "impactq8",
+      "impactq9",
+      "impactq10",
+      "impactq11",
+      "impactq12",
+      "impactq13",
+      "impactq14",
+      "impactq15",
+      "impactq16",
+      "impactq17",
+      "impactq18",
+      "impactq19",
+      "impactq20",
+      "impactq21",
+      "impactq22",
+      "impactq23",
+      "impactq24",
+      "impactq25",
+      "impactq26",
+      "impactq27",
+      "impactq28",
+      "impactq29",
+      "impactq30",
+      "impactq31",
+      "impactq32",
+      "impactq33",
+      "impactq34",
+      "impactq35",
+      "fatigueq1",
+      "fatigueq2",
+      "fatigueq3",
+      "fatigueq4",
+      "fatigueq5",
+      "fatigueq6",
+      "fatigueq7",
+      "fatigueq8",
+      "fatigueq9",
+      "fatigueq10",
+      "proms_comments"
+    ]
+  }
+}
