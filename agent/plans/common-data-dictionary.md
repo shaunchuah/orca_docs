@@ -13,20 +13,23 @@ Researchers use the Orca documentation site (MkDocs Material) to understand data
 - [x] (2025-10-30 17:14Z) Drafted initial ExecPlan outlining research method and documentation updates.
 - [x] (2025-10-30 17:18Z) Catalogued current data dictionary assets and dataset column listings to confirm baseline structure.
 - [x] (2025-10-30 17:18Z) Computed common field intersection and profiled value types from example datasets.
-- [ ] (2025-10-30 17:14Z) Draft common-field definitions drawing on existing study docs and dataset content.
-- [ ] (2025-10-30 17:14Z) Update MkDocs content and CSV assets, verify build, and capture evidence.
+- [x] (2025-10-30 17:24Z) Drafted common-field definitions and recorded them in agent/research/common_data_dictionary/draft_dictionary.md.
+- [x] (2025-10-30 17:28Z) Updated MkDocs data dictionary assets and validated the site with `uv run mkdocs build`.
 
 ## Surprises & Discoveries
 
-- None yet.
+- Observation: `previous_tonsillectomy` includes `-1000` in GI-DAMPs, used as an explicit unknown response.
+  Evidence: example_datasets/gidamps_sampling_2025-10-30.csv row for study_id `GID-11`.
 
 ## Decision Log
 
-- None yet.
+- Decision: Present the unified dictionary in alphabetical order.
+  Rationale: Alphabetical ordering keeps the Markdown and CSV diff-friendly and aligns with how analysts search for field names.
+  Date/Author: 2025-10-30 (Codex)
 
 ## Outcomes & Retrospective
 
-- To be completed after implementation milestones are delivered.
+- (2025-10-30 17:28Z) Unified data dictionary now documents 54 shared fields across GI-DAMPs, MUSIC, and Mini-MUSIC. Markdown and CSV sources stay in sync via generated assets, and the MkDocs build passes. Remaining follow-up: monitor future dataset exports for new common columns and extend the dictionary as needed.
 
 ## Context and Orientation
 
@@ -237,12 +240,10 @@ All analysis scripts operate on read-only copies of the example CSVs and write o
 
 ## Artifacts and Notes
 
-Capture the following artifacts within the repository or this plan:
-
-- `agent/research/common_data_dictionary/common_fields.json` containing intersection metadata.
-- `agent/research/common_data_dictionary/summary.md` with a human-readable overview.
-- Excerpts of `mkdocs build` output pasted into this plan or noted in `Surprises & Discoveries` if they reveal warnings.
-- Descriptions of any manual decisions (for example, how to interpret boolean encodings) recorded in the `Decision Log`.
+- `agent/research/common_data_dictionary/common_fields.json` stores the profiled headers and value distributions.
+- `agent/research/common_data_dictionary/summary.md` summarizes inferred types and sample values.
+- `agent/research/common_data_dictionary/dictionary_entries.json` and `draft_dictionary.md` capture the curated definitions.
+- Validation evidence: `uv run mkdocs build` (2025-10-30 17:28Z) completed without errors.
 
 ## Interfaces and Dependencies
 

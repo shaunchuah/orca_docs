@@ -1,0 +1,326 @@
+[
+  {
+    "variable": "ada_antibody",
+    "type": "string",
+    "values": "assay result (e.g., `5`, `<10`, `not_tested`)",
+    "comments": "Anti-adalimumab antibody result captured during therapeutic drug monitoring; qualitative thresholds or numeric titres reported by the lab."
+  },
+  {
+    "variable": "ada_level",
+    "type": "string",
+    "values": "assay result in ug/mL (numeric or threshold string)",
+    "comments": "Measured adalimumab concentration from therapeutic drug monitoring; labs often report numeric levels or threshold strings such as `>12`."
+  },
+  {
+    "variable": "age",
+    "type": "int",
+    "values": "",
+    "comments": "Participant age in years at the time of the visit."
+  },
+  {
+    "variable": "age_at_diagnosis",
+    "type": "int",
+    "values": "",
+    "comments": "Age in years when inflammatory bowel disease was first diagnosed."
+  },
+  {
+    "variable": "albumin",
+    "type": "float",
+    "values": "",
+    "comments": "Serum albumin from NHS bloods, measured in g/L."
+  },
+  {
+    "variable": "baseline_eims_episcleritis",
+    "type": "int",
+    "values": "`1` yes, `0` no",
+    "comments": "Baseline record indicating a history of episcleritis as an extra-intestinal manifestation."
+  },
+  {
+    "variable": "baseline_eims_erythema_nodosum",
+    "type": "int",
+    "values": "`1` yes, `0` no",
+    "comments": "Baseline record indicating erythema nodosum as an extra-intestinal manifestation."
+  },
+  {
+    "variable": "baseline_eims_none",
+    "type": "int",
+    "values": "`1` yes, `0` no",
+    "comments": "Baseline survey response confirming no extra-intestinal manifestations were reported."
+  },
+  {
+    "variable": "baseline_eims_pyoderma",
+    "type": "int",
+    "values": "`1` yes, `0` no",
+    "comments": "Baseline record indicating pyoderma gangrenosum as an extra-intestinal manifestation."
+  },
+  {
+    "variable": "baseline_eims_sacroileitis",
+    "type": "int",
+    "values": "`1` yes, `0` no",
+    "comments": "Baseline record indicating sacroiliitis as an extra-intestinal manifestation."
+  },
+  {
+    "variable": "baseline_eims_uveitis",
+    "type": "int",
+    "values": "`1` yes, `0` no",
+    "comments": "Baseline record indicating uveitis as an extra-intestinal manifestation."
+  },
+  {
+    "variable": "basophils",
+    "type": "float",
+    "values": "",
+    "comments": "Absolute basophil count (x10^9/L) from NHS bloods."
+  },
+  {
+    "variable": "bmi",
+    "type": "float",
+    "values": "",
+    "comments": "Body mass index calculated as kg/m^2."
+  },
+  {
+    "variable": "calprotectin",
+    "type": "string",
+    "values": "numeric or threshold string (e.g., `<20`, `>1800`, `no sample`)",
+    "comments": "Faecal calprotectin result (ug/g) reported as numeric values or qualitative thresholds by the laboratory."
+  },
+  {
+    "variable": "calprotectin_date",
+    "type": "date",
+    "values": "YYYY-MM-DD",
+    "comments": "Date the faecal calprotectin sample was collected."
+  },
+  {
+    "variable": "creatinine",
+    "type": "float",
+    "values": "",
+    "comments": "Serum creatinine from NHS bloods, measured in umol/L."
+  },
+  {
+    "variable": "crp",
+    "type": "float",
+    "values": "",
+    "comments": "C-reactive protein (mg/L) from NHS bloods."
+  },
+  {
+    "variable": "date_of_diagnosis",
+    "type": "date",
+    "values": "YYYY-MM-DD",
+    "comments": "Calendar date when inflammatory bowel disease was first diagnosed."
+  },
+  {
+    "variable": "drug_level_date",
+    "type": "date",
+    "values": "YYYY-MM-DD",
+    "comments": "Date the therapeutic drug monitoring sample (for biologic drug or antibody levels) was taken."
+  },
+  {
+    "variable": "endoscopy_date",
+    "type": "date",
+    "values": "YYYY-MM-DD",
+    "comments": "Date of the most recent endoscopy associated with the visit."
+  },
+  {
+    "variable": "endoscopy_report",
+    "type": "string",
+    "values": "",
+    "comments": "Narrative endoscopy findings recorded in clinical notes."
+  },
+  {
+    "variable": "eosinophils",
+    "type": "float",
+    "values": "",
+    "comments": "Absolute eosinophil count (x10^9/L) from NHS bloods."
+  },
+  {
+    "variable": "haematocrit",
+    "type": "float",
+    "values": "",
+    "comments": "Haematocrit reported as a proportion (L/L)."
+  },
+  {
+    "variable": "haemoglobin",
+    "type": "float",
+    "values": "",
+    "comments": "Haemoglobin concentration (g/L) from NHS bloods."
+  },
+  {
+    "variable": "has_active_symptoms",
+    "type": "string",
+    "values": "`1` / `0` or `yes` / `no`",
+    "comments": "Indicator of active symptoms at the visit; recorded as `1`/`0` or `yes`/`no` depending on source system."
+  },
+  {
+    "variable": "height",
+    "type": "int",
+    "values": "",
+    "comments": "Height measured in centimetres."
+  },
+  {
+    "variable": "ifx_antibody",
+    "type": "string",
+    "values": "assay result (e.g., `5`, `<10`, `not_detected`)",
+    "comments": "Anti-infliximab antibody result from therapeutic drug monitoring; values include numeric titres or qualitative thresholds."
+  },
+  {
+    "variable": "ifx_level",
+    "type": "string",
+    "values": "assay result in ug/mL (numeric or threshold string)",
+    "comments": "Measured infliximab concentration from therapeutic drug monitoring; labs report numeric values or thresholds such as `>12`."
+  },
+  {
+    "variable": "lymphocytes",
+    "type": "float",
+    "values": "",
+    "comments": "Absolute lymphocyte count (x10^9/L) from NHS bloods."
+  },
+  {
+    "variable": "monocytes",
+    "type": "float",
+    "values": "",
+    "comments": "Absolute monocyte count (x10^9/L) from NHS bloods."
+  },
+  {
+    "variable": "mri_pelvis",
+    "type": "int",
+    "values": "`1` performed, `0` not performed",
+    "comments": "Indicator that a pelvic MRI was completed for the visit."
+  },
+  {
+    "variable": "mri_small_bowel",
+    "type": "int",
+    "values": "`1` performed, `0` not performed",
+    "comments": "Indicator that a small bowel MRI was completed for the visit."
+  },
+  {
+    "variable": "mri_small_bowel_report",
+    "type": "string",
+    "values": "",
+    "comments": "Narrative findings from the small bowel MRI report."
+  },
+  {
+    "variable": "neutrophils",
+    "type": "float",
+    "values": "",
+    "comments": "Absolute neutrophil count (x10^9/L) from NHS bloods."
+  },
+  {
+    "variable": "nhs_bloods_date",
+    "type": "date",
+    "values": "YYYY-MM-DD",
+    "comments": "Date the NHS blood panel was collected."
+  },
+  {
+    "variable": "pathology_report",
+    "type": "string",
+    "values": "",
+    "comments": "Narrative pathology findings (e.g., biopsy results)."
+  },
+  {
+    "variable": "platelets",
+    "type": "int",
+    "values": "",
+    "comments": "Platelet count (x10^9/L) from NHS bloods."
+  },
+  {
+    "variable": "potassium",
+    "type": "float",
+    "values": "",
+    "comments": "Serum potassium (mmol/L) from NHS bloods."
+  },
+  {
+    "variable": "previous_appendicectomy",
+    "type": "int",
+    "values": "`1` yes, `0` no",
+    "comments": "History of appendicectomy recorded at baseline."
+  },
+  {
+    "variable": "previous_tonsillectomy",
+    "type": "int",
+    "values": "`1` yes, `0` no, `-1000` unknown",
+    "comments": "History of tonsillectomy recorded at baseline; `-1000` is used where the source study captured an explicit unknown response."
+  },
+  {
+    "variable": "sampling_ada",
+    "type": "int",
+    "values": "`1` yes, `0` no",
+    "comments": "Adalimumab was being taken at the time of sampling."
+  },
+  {
+    "variable": "sampling_asa",
+    "type": "int",
+    "values": "`1` yes, `0` no",
+    "comments": "Aminosalicylates (5-ASA) were being taken at the time of sampling."
+  },
+  {
+    "variable": "sampling_ifx",
+    "type": "int",
+    "values": "`1` yes, `0` no",
+    "comments": "Infliximab was being taken at the time of sampling."
+  },
+  {
+    "variable": "sampling_mtx",
+    "type": "int",
+    "values": "`1` yes, `0` no",
+    "comments": "Methotrexate was being taken at the time of sampling."
+  },
+  {
+    "variable": "sampling_uste",
+    "type": "int",
+    "values": "`1` yes, `0` no",
+    "comments": "Ustekinumab was being taken at the time of sampling."
+  },
+  {
+    "variable": "sampling_vedo",
+    "type": "int",
+    "values": "`1` yes, `0` no",
+    "comments": "Vedolizumab was being taken at the time of sampling."
+  },
+  {
+    "variable": "sex",
+    "type": "string",
+    "values": "`male`, `female`",
+    "comments": "Participant sex recorded by the study."
+  },
+  {
+    "variable": "sodium",
+    "type": "float",
+    "values": "",
+    "comments": "Serum sodium (mmol/L) from NHS bloods."
+  },
+  {
+    "variable": "study_center",
+    "type": "string",
+    "values": "`edinburgh`, `glasgow`, `aberdeen`, `dundee`",
+    "comments": "Recruiting centre recorded for the visit."
+  },
+  {
+    "variable": "study_group",
+    "type": "string",
+    "values": "`cd`, `uc`, `ibdu`, `non_ibd`, `await_dx`, `hc`",
+    "comments": "Disease classification at the visit: Crohn's disease (cd), Ulcerative colitis (uc), IBD unclassified (ibdu), non-IBD control, awaiting diagnosis, or healthy control."
+  },
+  {
+    "variable": "study_id",
+    "type": "string",
+    "values": "",
+    "comments": "Study-specific participant identifier using prefixes such as `GID-`, `MID-`, or `MINI-`."
+  },
+  {
+    "variable": "urea",
+    "type": "float",
+    "values": "",
+    "comments": "Serum urea (mmol/L) from NHS bloods."
+  },
+  {
+    "variable": "weight",
+    "type": "float",
+    "values": "",
+    "comments": "Weight measured in kilograms."
+  },
+  {
+    "variable": "white_cell_count",
+    "type": "float",
+    "values": "",
+    "comments": "Total white cell count (x10^9/L) from NHS bloods."
+  }
+]

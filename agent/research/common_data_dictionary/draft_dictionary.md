@@ -1,10 +1,4 @@
-# Unified Data Dictionary
-
-This standardized data dictionary is used for datasets within G-Trac. Only the common variables across datasets are standardized as shown below. Each study dataset will also include its own study-specific data fields.
-
-As a standard style guide, all variables in datasets will follow the snake_case naming convention. All characters will be in lower case, and underscores will be used instead of spaces.
-
-The table below lists every field shared by the GI-DAMPs Sampling, MUSIC Main, and Mini-MUSIC Main datasets in the `example_datasets/` folder. Entries are ordered alphabetically so changes are easy to track across releases.
+# Draft Common Data Dictionary
 
 | Variable | Type | Values | Comments |
 |---|---|---|---|
