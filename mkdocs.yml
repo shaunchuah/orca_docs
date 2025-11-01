@@ -47,7 +47,7 @@ nav:
       - data_dictionary/music_columns.md
       - data_dictionary/mini_music_columns.md
   - Pipelines:
-      - pipeline/pipelines_tabbed.md
+      - pipeline/index.md
       - pipeline/gidamps.md
       - pipeline/music.md
       - pipeline/mini_music.md

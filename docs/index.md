@@ -17,7 +17,7 @@ Orca is a Dagster-based data engineering platform that aggregates data from mult
 1. **[Getting Started](getting_started.md)** - Learn how to access and work with Orca datasets
 2. **[Dataset Overviews](datasets/index.md)** - Explore each dataset's features and statistics (with tabs for quick comparison)
 3. **[Data Dictionary](data_dictionary/index.md)** - Understand the standardized variables and study-specific fields
-4. **[Pipelines](pipeline/pipelines_tabbed.md)** - Review the data transformation code and lineage
+4. **[Pipelines](pipeline/index.md)** - Review the data transformation code and lineage
 
 ## Key Features
 
@@ -49,7 +49,7 @@ Datasets include:
 |---------|-------------|
 | [Dataset Overviews](datasets/index.md) | Key statistics, features, and characteristics of each dataset (tabbed view) |
 | [Data Dictionary](data_dictionary/index.md) | Complete variable reference with types, values, and descriptions |
-| [Pipelines](pipeline/pipelines_tabbed.md) | Code documentation for data extraction and transformation (tabbed view) |
+| [Pipelines](pipeline/index.md) | Code documentation for data extraction and transformation (tabbed view) |
 | [Policies](dataset_governance.md) | Dataset governance, attribution policy, and access requirements |
 | [Known Issues](issues.md) | Important data quality considerations and limitations |
 
