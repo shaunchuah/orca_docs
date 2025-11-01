@@ -2,49 +2,83 @@
 
 This section provides comprehensive overviews of each dataset available through the Orca platform. Each dataset has unique characteristics, data structures, and research focus areas.
 
-## Available Datasets
+=== "GI-DAMPs"
 
-| Dataset | Study ID Prefix | Study Type | Participants | Columns | Data Structure |
-|---------|----------------|------------|--------------|---------|----------------|
-| [GI-DAMPs](gidamps.md) | `GID-` | Cross-sectional & longitudinal | ~9,756 rows* | 227 | Sampling visits |
-| [MUSIC](music.md) | `MID-` | Adult longitudinal cohort | ~17,260 rows* | 369 | Fixed timepoints (1-5) |
-| [Mini-MUSIC](mini_music.md) | `MINI-` | Pediatric longitudinal cohort | ~9,265 rows* | 423 | Fixed timepoints (1-3) |
+    **Study ID Prefix**: `GID-`
 
-\* Row counts are approximate and based on example datasets. Actual counts may vary.
+    GI-DAMPs is a cross-sectional sampling study (with optional longitudinal sampling) that collects comprehensive clinical and biomarker data from participants with IBD and healthy controls.
 
-## Quick Comparison
+    **Key Characteristics:**
 
-### Study Populations
+    - Data Structure: Sampling-based visits (not fixed timepoints)
+    - Participants: Adults and children
+    - Recruitment Settings: Inpatient, outpatient, and endoscopy-based
+    - Focus Areas: Biomarker research, drug monitoring, disease activity assessment
 
-- **GI-DAMPs**: Adults and children, multiple recruitment settings (inpatient, outpatient, endoscopy)
-- **MUSIC**: Adults only (≥18 years)
-- **Mini-MUSIC**: Pediatric only (typically <18 years)
+    **Dataset Statistics:**
 
-### Key Differences
+    - Columns: 227
+    - Study Centers: Edinburgh, Glasgow, Dundee
+    - Study Groups: CD, UC, IBDU, non-IBD, awaiting diagnosis, healthy controls
 
-| Feature | GI-DAMPs | MUSIC | Mini-MUSIC |
-|---------|----------|-------|------------|
-| Disease Activity Scores | HBI, SCCAI | HBI, SCCAI, Mayo | PCDAI, PUCAI |
-| Classification System | Montreal | Montreal | Paris (pediatric) |
-| Mucosal Healing Tracking | Limited | Comprehensive | Comprehensive |
-| EEN Tracking | No | No | Yes |
-| Longitudinal Follow-up | Variable | Fixed timepoints | Fixed timepoints |
+    **[View Full GI-DAMPs Documentation →](gidamps.md)**
 
-### Common Variables
+=== "MUSIC"
 
-All datasets share standardized variables for demographics, laboratory values, medications, and phenotyping. See the [Unified Data Dictionary](../data_dictionary/index.md) for complete variable definitions and documentation.
+    **Study ID Prefix**: `MID-`
 
-For guidance on selecting the appropriate dataset for your analysis, see the [Dataset Comparison Guide](comparison.md).
+    MUSIC is a longitudinal adult IBD cohort study with fixed follow-up timepoints focusing on mucosal healing outcomes.
 
-## Combining Datasets
+    **Key Characteristics:**
 
-For analyses that span multiple studies, use the [Combined MUSIC dataset](../pipeline/combined_music.md) or focus on variables documented in the [Unified Data Dictionary](../data_dictionary/index.md) to ensure compatibility.
+    - Data Structure: Fixed timepoints (timepoint_1 through timepoint_5)
+    - Participants: Adults only
+    - Longitudinal Follow-up: Scheduled visits at baseline and follow-up intervals
+    - Focus Areas: Mucosal healing
 
-**Important**: Always review study-specific differences in disease activity classifications as documented in [Known Issues](../issues.md).
+    **Dataset Statistics:**
 
-## Next Steps
+    - Columns: 369
+    - Study Centers: Edinburgh, Glasgow, Dundee
+    - Study Groups: CD, UC
 
-- Review individual dataset pages for detailed information
-- Check the [Data Dictionary](../data_dictionary/index.md) for variable definitions
-- See [Getting Started](../getting_started.md) for access and usage guidelines
+    **[View Full MUSIC Documentation →](music.md)**
+
+=== "Mini-MUSIC"
+
+    **Study ID Prefix**: `MINI-`
+
+    Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up timepoints, using age-appropriate disease activity scores and classification systems designed for children/adolescents.
+
+    **Key Characteristics:**
+
+    - Data Structure: Fixed timepoints (timepoint_1 through timepoint_3)
+    - Participants: Pediatric only (typically <18 years)
+    - Age Groups: 6-10, 10-13, 14-18 years
+    - Focus Areas: Pediatric-specific outcomes, EEN, age-appropriate disease activity
+
+    **Dataset Statistics:**
+
+    - Columns: 423
+    - Study Centers: Edinburgh, Glasgow, Dundee, Aberdeen
+    - Study Groups: CD, UC, IBDU, non-IBD
+
+    **[View Full Mini-MUSIC Documentation →](mini_music.md)**
+
+=== "Comparison"
+
+    **Quick Comparison Table:**
+
+    | Feature | GI-DAMPs | MUSIC | Mini-MUSIC |
+    |---------|----------|-------|------------|
+    | **Study ID Prefix** | `GID-` | `MID-` | `MINI-` |
+    | **Population** | Adults only | Adults only | Pediatric only |
+    | **Data Structure** | Sampling visits | Fixed timepoints | Fixed timepoints |
+    | **Timepoints** | Variable | 1-5 | 1-3 |
+    | **Columns** | 227 | 369 | 423 |
+    | **Primary Focus** | Biomarkers, drug monitoring | Mucosal healing | Pediatric outcomes, EEN |
+    | **Disease Activity Scores** | HBI, SCCAI | HBI, SCCAI, Mayo | PCDAI, PUCAI |
+
+    **[View Detailed Comparison Guide →](comparison.md)**
+
 

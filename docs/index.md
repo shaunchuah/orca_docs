@@ -15,9 +15,9 @@ Orca is a Dagster-based data engineering platform that aggregates data from mult
 ## Quick Start
 
 1. **[Getting Started](getting_started.md)** - Learn how to access and work with Orca datasets
-2. **[Data Dictionary](data_dictionary/index.md)** - Understand the standardized variables and study-specific fields
-3. **[Dataset Overviews](datasets/)** - Explore each dataset's features and statistics
-4. **[Pipelines](pipeline/index.md)** - Review the data transformation code and lineage
+2. **[Datasets](datasets/datasets_tabbed.md)** - Explore each dataset's features and statistics (with tabs for quick comparison)
+3. **[Data Dictionary](data_dictionary/index.md)** - Understand the standardized variables and study-specific fields
+4. **[Pipelines](pipeline/pipelines_tabbed.md)** - Review the data transformation code and lineage
 
 ## Key Features
 
@@ -28,6 +28,7 @@ All datasets follow standardized naming conventions (snake_case) and share commo
 ### Comprehensive Clinical Data
 
 Datasets include:
+
 - Demographics and baseline characteristics
 - Disease activity scores (HBI, SCCAI, Mayo, UCEIS, SES-CD)
 - Laboratory values (bloods, calprotectin, drug levels)
@@ -46,16 +47,16 @@ Datasets include:
 
 | Section | Description |
 |---------|-------------|
-| [Dataset Overviews](datasets/) | Key statistics, features, and characteristics of each dataset |
+| [Datasets](datasets/datasets_tabbed.md) | Key statistics, features, and characteristics of each dataset (tabbed view) |
 | [Data Dictionary](data_dictionary/index.md) | Complete variable reference with types, values, and descriptions |
-| [Pipelines](pipeline/index.md) | Code documentation for data extraction and transformation |
-| [Dataset Governance](dataset_governance.md) | Policies and processes for data access and usage |
-| [Attribution Policy](attribution_policy.md) | Requirements for citing datasets in publications |
+| [Pipelines](pipeline/pipelines_tabbed.md) | Code documentation for data extraction and transformation (tabbed view) |
+| [Policies](dataset_governance.md) | Dataset governance, attribution policy, and access requirements |
 | [Known Issues](issues.md) | Important data quality considerations and limitations |
 
 ## Getting Help
 
 For questions about:
+
 - **Dataset access**: Contact the data steward listed in [Dataset Governance](dataset_governance.md)
 - **Data interpretation**: Review the [Data Dictionary](data_dictionary/index.md) and [Known Issues](issues.md)
-- **Technical support**: Contact the Orca engineering team via `orca-governance@domain.org`
+- **Technical support**: Contact the Orca engineering team via [shaun.chuah@glasgow.ac.uk]

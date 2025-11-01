@@ -8,7 +8,7 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
 
 ## Key Characteristics
 
-- **Data Structure**: Fixed timepoints (timepoint_1 through timepoint_3)
+- **Data Structure**: Fixed timepoints (timepoint_1 through timepoint_3: baseline, 3 months, 6 months)
 - **Participants**: Pediatric only (typically <18 years)
 - **Age Groups**: 6-10, 10-13, 14-18 years
 - **Longitudinal Follow-up**: Scheduled visits at baseline and follow-up intervals
@@ -16,7 +16,6 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
 
 ## Dataset Statistics
 
-- **Approximate Rows**: ~9,265 (all timepoints)
 - **Columns**: 423
 - **Study Centers**: Edinburgh, Glasgow, Dundee, Aberdeen
 - **Study Groups**: CD, UC, IBDU, non-IBD
@@ -24,6 +23,7 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
 ## Key Variables
 
 ### Demographics & Baseline
+
 - `study_id`: Format `MINI-xxx`
 - `redcap_event_name`: `timepoint_1`, `timepoint_2`, `timepoint_3`
 - `patient_age_group`: 6-10, 10-13, 14-18, no_data
@@ -33,6 +33,7 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
 - `date_of_diagnosis`, `age_at_diagnosis`
 
 ### Pediatric Disease Activity Scores
+
 - **Ulcerative Colitis**:
   - `pucai_score`: Pediatric Ulcerative Colitis Activity Index (0-85)
   - Components: `pucai_pain`, `pucai_bleeding`, `pucai_consistency`, `pucai_stools`, `pucai_nocturnal`, `pucai_activity`
@@ -42,6 +43,7 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
   - EIM components: `pcdai_eim_fever`, `pcdai_eim_arthritis`, `pcdai_eim_uveitis`, etc.
 
 ### Pediatric Classification Systems
+
 - **Crohn's Disease**: Paris Classification
   - `cdparis_location`: L1, L2, L3, L4
   - `cdparis_behaviour`: B1, B2, B3, B2+B3
@@ -53,6 +55,7 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
   - `ucparis_severity`: S0, S1
 
 ### Patient-Reported Outcomes (Pediatric)
+
 - `impact3_score`: IMPACT-III total score (0-100)
 - `impact_wellbeing`, `impact_emotional`, `impact_social`, `impact_bodyimage`: IMPACT-III subscales
 - `impactq1` through `impactq35`: Individual IMPACT-III items
@@ -61,6 +64,7 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
 - `fatigueq1` through `fatigueq10`: Individual fatigue items
 
 ### Exclusive Enteral Nutrition (EEN)
+
 - `een_use`: EEN use (yes/no)
 - `een_formula_type`: Modulen IBD, Fortisip, Nutrison Energy, Elemental EO28, Pediasure, Nutrini, Neocate Jr, other
 - `een_formula_type_text`: Free text for other formulas
@@ -68,12 +72,14 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
 - `een_still_taken`: Currently on EEN (yes/no)
 
 ### Disease Activity Assessment
+
 - `has_active_symptoms`: yes/no
 - `physician_global_assessment`: biochem_remission, clinical_remission, mild, moderate, severe
 - `disease_activity`: remission, mild, moderate, severe, not_applicable
 - Individual symptoms: `symptoms_abdominal_pain`, `symptoms_diarrhoea`, `symptoms_urgency`, `symptoms_pr_bleeding`, `symptoms_weight_loss`, `symptoms_fatigue`, `symptoms_perianal`
 
 ### Laboratory Values
+
 - Blood parameters: `haemoglobin`, `crp`, `albumin`, `white_cell_count`, `esr`, etc.
 - `calprotectin`: Faecal calprotectin
 - `calprotectin_date`: Sample collection date
@@ -81,6 +87,7 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
 - `drug_level_date`: Date of drug level testing
 
 ### Medications
+
 - `sampling_*`: Medications at time of visit (1 = yes, 0 = no)
   - `sampling_asa`, `sampling_een`, `sampling_steroids_oral`, `sampling_steroids_iv`, `sampling_steroids_topical`
   - `sampling_imm`, `sampling_mtx`, `sampling_ifx`, `sampling_ada`
@@ -90,6 +97,7 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
 - Concomitant non-IBD drugs: `concomitant_drug_1_*` through `concomitant_drug_5_*`
 
 ### Clinical Events
+
 - `new_flare_up`: New flare since last visit
 - `flare_up_1_date`: Flare date
 - `flare_up_1_description_*`: Detailed flare symptoms (abdominal_pain, diarrhoea, urgency, etc.)
@@ -99,12 +107,14 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
 - `hospital_admission_1_*`: Admission details
 
 ### Phenotyping
+
 - Extra-intestinal manifestations: `baseline_eims_*` (arthritis, erythema_nodosum, pyoderma, uveitis, episcleritis, sacroileitis, conjunctivitis, angular_cheilitis, psc, other)
 - Surgical history: `surgical_history_*`
 - Past medical history: `pmh_1_diagnosis` through `pmh_7_diagnosis`
 - Family history: `fh_of_ibd_present`, `fh_1_*` through `fh_5_*` (relationship, age_at_diagnosis, diagnosis)
 
 ### Investigations
+
 - `endoscopy_date`, `endoscopy_type_colonoscopy`, `endoscopy_type_upper_gi_endoscopy`
 - `endoscopy_report`, `pathology_report`
 - `mayo_endoscopic_findings`, `sescd_calc`, `sescd_noncalc`
@@ -114,6 +124,7 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
 - Radiology reports available
 
 ### Saliva Sampling
+
 - `saliva_sample`: Sample collected (1 = yes, 0 = no)
 - `saliva_setting`: Sample collection setting
 - `sample_date`: Date of saliva sample
@@ -122,11 +133,13 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
 ## Data Structure Notes
 
 ### Timepoint Structure
+
 - `timepoint_1`: Baseline visit
-- `timepoint_2`: Follow-up visit
-- `timepoint_3`: Final follow-up visit
+- `timepoint_2`: 3 months follow-up
+- `timepoint_3`: 6 months follow-up
 
 ### Age Groups
+
 - `patient_age_group`: Categorical grouping (6-10, 10-13, 14-18 years)
 - Used for appropriate scoring system selection
 
@@ -141,15 +154,19 @@ Mini-MUSIC is a longitudinal pediatric IBD cohort study with fixed follow-up tim
 ## Important Considerations
 
 ### Disease Activity Scores
+
 Mini-MUSIC uses pediatric-specific scores that cannot be directly compared to adult scores:
+
 - **Do not compare** PCDAI with HBI
 - **Do not compare** PUCAI with SCCAI or Mayo
 - Use Paris classification (not Montreal) for phenotype comparisons
 
 ### Age Groups
+
 When analyzing by age, consider using `patient_age_group` for categorical analyses or `age` for continuous analyses.
 
 ### Missing Adult Scores
+
 Mini-MUSIC does not include HBI, SCCAI, or Mayo scores, as these are not validated in pediatric populations.
 
 ## Data Dictionary
@@ -164,4 +181,3 @@ Mini-MUSIC does not include HBI, SCCAI, or Mayo scores, as these are not validat
 ## Data Access
 
 For access requests or data questions, contact the data steward listed in [Dataset Governance](../dataset_governance.md).
-

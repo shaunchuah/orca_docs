@@ -8,28 +8,28 @@ Orca datasets are stored in G-Trac and processed through Dagster pipelines. Each
 
 ## Available Datasets
 
-### GI-DAMPs (GID)
-- **Study Type**: Cross-sectional and longitudinal IBD sampling study (Investigation into the inflammatory mechanism of gut damage-associated molecular patterns [DAMPs] in Inflammatory Bowel Disease)
-- **Data Structure**: Sampling visits with repeated measures
+### GI-DAMPs 
+
+- **Study Name**: Investigation into the inflammatory mechanism of gut damage-associated molecular patterns in Inflammatory Bowel Disease
+- **Study Type**: Cross-sectional IBD sampling study (with optional longitudinal sampling)
+- **Data Structure**: Sampling visits with optional repeated measures
 - **Key Features**: Comprehensive biomarker data, detailed medication tracking
-- **Rows**: ~9,756 (as of example dataset)
-- **Columns**: 227
 - **More Info**: [GI-DAMPs Overview](datasets/gidamps.md)
 
-### MUSIC (MID)
-- **Study Type**: Longitudinal adult IBD cohort (Mitochondrial DAMPs as mechanistic biomarkers of gut mucosal inflammation)
-- **Data Structure**: Multiple timepoints (timepoint_1 through timepoint_5)
-- **Key Features**: Mucosal healing outcomes, comprehensive PRO2 scores
-- **Rows**: ~17,260 (as of example dataset)
-- **Columns**: 369
+### MUSIC
+
+- **Study Name**: Mitochondrial DAMPs as mechanistic biomarkers of gut mucosal inflammation
+- **Study Type**: Longitudinal adult IBD cohort study
+- **Data Structure**: Fixed timepoints (timepoint_1 through timepoint_5)
+- **Key Features**: Mucosal healing outcomes, longitudinal follow-up
 - **More Info**: [MUSIC Overview](datasets/music.md)
 
-### Mini-MUSIC (MINI)
-- **Study Type**: Pediatric IBD cohort study
-- **Data Structure**: Pediatric-specific assessments (PUCAI, PCDAI, Paris classification)
+### Mini-MUSIC
+
+- **Study Name**: Mitochondrial DAMPs as mechanistic biomarkers of gut mucosal inflammation in children
+- **Study Type**: Paediatric IBD cohort study
+- **Data Structure**: Similar to MUSIC, but with paediatric-specific assessments (PUCAI, PCDAI, Paris classification)
 - **Key Features**: Age-appropriate disease activity scores, exclusive enteral nutrition (EEN) tracking
-- **Rows**: ~9,265 (as of example dataset)
-- **Columns**: 423
 - **More Info**: [Mini-MUSIC Overview](datasets/mini_music.md)
 
 ## Accessing Datasets
@@ -37,18 +37,12 @@ Orca datasets are stored in G-Trac and processed through Dagster pipelines. Each
 ### Step 1: Understand the Data Structure
 
 Before accessing data, familiarize yourself with:
+
 1. **[Unified Data Dictionary](data_dictionary/index.md)** - Common variables across all datasets
 2. **[Study-Specific Columns](data_dictionary/)** - Variables unique to each study
 3. **[Dataset Governance](dataset_governance.md)** - Access policies and requirements
 
-### Step 2: Request Access
-
-Contact the appropriate data steward (see [Dataset Governance](dataset_governance.md)) to:
-- Obtain access credentials
-- Specify your intended use case
-- Review any restrictions or requirements
-
-### Step 3: Load and Explore Data
+### Step 2: Load and Explore Data
 
 Datasets are typically provided as CSV files. Here's a basic workflow:
 
@@ -71,22 +65,26 @@ print(df[['study_id', 'study_group', 'age', 'sex', 'crp', 'calprotectin']].head(
 All variables follow **snake_case** naming convention. Key patterns:
 
 ### Demographics
+
 - `study_id`: Unique participant identifier (prefix: GID-, MID-, MINI-)
 - `study_group`: Disease classification (cd, uc, ibdu, non_ibd, hc)
 - `age`, `sex`, `height`, `weight`, `bmi`
 
 ### Laboratory Values
+
 - Prefix pattern: Variable name indicates the measurement
 - `nhs_bloods_date`: Date of blood sample
 - `haemoglobin`, `crp`, `albumin`: Test results
 - `calprotectin_date`, `calprotectin`: Faecal calprotectin
 
 ### Medications
+
 - `sampling_*`: Medications at time of sampling (1 = yes, 0 = no)
 - Examples: `sampling_asa`, `sampling_ifx`, `sampling_ada`
 - `baseline_*`: Historical medication exposure
 
 ### Disease Activity Scores
+
 - `hbi_total`: Harvey-Bradshaw Index total score
 - `sccai_total`: Simple Clinical Colitis Activity Index
 - `mayo_total`: Mayo Score
@@ -124,6 +122,7 @@ combined = pd.concat([
 ### Date Variables
 
 Date columns follow `YYYY-MM-DD` format:
+
 ```python
 # Convert to datetime
 df['nhs_bloods_date'] = pd.to_datetime(df['nhs_bloods_date'])
@@ -134,14 +133,18 @@ df['date_of_diagnosis'] = pd.to_datetime(df['date_of_diagnosis'])
 
 ### Study-Specific Differences
 
-1. **Disease Activity Classifications**: Vary between studies (see [Known Issues](issues.md))
-2. **Timepoints**: 
-   - GI-DAMPs: Sampling visits (no fixed schedule)
-   - MUSIC: Fixed timepoints (1-5)
-   - Mini-MUSIC: Fixed timepoints (1-3)
-3. **Scoring Systems**: 
-   - Adults: HBI, SCCAI, Mayo
-   - Pediatrics: PCDAI, PUCAI, Paris classification
+**Disease Activity Classifications**: Vary between studies (see [Known Issues](issues.md))
+
+**Timepoints**:
+
+- GI-DAMPs: Sampling visits (no fixed schedule)
+- MUSIC: Fixed timepoints (1-5)
+- Mini-MUSIC: Fixed timepoints (1-3)
+
+**Scoring Systems**:
+
+- Adults: HBI, SCCAI, Mayo
+- Pediatrics: PCDAI, PUCAI, Paris classification
 
 ### Data Quality
 
@@ -152,7 +155,7 @@ df['date_of_diagnosis'] = pd.to_datetime(df['date_of_diagnosis'])
 
 ## Next Steps
 
-1. **[Explore Dataset Overviews](datasets/)** - Detailed information about each dataset
+1. **[Explore Dataset Overviews](datasets/index.md)** - Detailed information about each dataset
 2. **[Review Data Dictionary](data_dictionary/index.md)** - Complete variable reference
 3. **[Check Known Issues](issues.md)** - Important limitations and considerations
 4. **[Understand Pipelines](pipeline/index.md)** - How data is transformed
@@ -160,6 +163,6 @@ df['date_of_diagnosis'] = pd.to_datetime(df['date_of_diagnosis'])
 ## Getting Help
 
 - **Data questions**: Contact study data stewards (see [Dataset Governance](dataset_governance.md))
-- **Technical issues**: `orca-governance@domain.org`
+- **Technical issues**: [shaun.chuah@glasgow.ac.uk](shaun.chuah@glasgow.ac.uk)
 - **Documentation updates**: Submit issues or pull requests
 

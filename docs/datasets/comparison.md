@@ -7,12 +7,12 @@ This guide helps you understand the similarities and differences between Orca da
 | Feature | GI-DAMPs | MUSIC | Mini-MUSIC |
 |---------|----------|-------|------------|
 | **Study ID Prefix** | `GID-` | `MID-` | `MINI-` |
-| **Population** | Adults & Children | Adults only | Pediatric only |
+| **Population** | Adults only | Adults only | Pediatric only |
 | **Data Structure** | Sampling visits | Fixed timepoints | Fixed timepoints |
-| **Timepoints** | Variable (sampling-based) | 1-5 | 1-3 |
-| **Rows (approx.)** | ~9,756 | ~17,260 | ~9,265 |
+| **Timepoints** | Variable | 1-5 | 1-3 |
 | **Columns** | 227 | 369 | 423 |
-| **Primary Focus** | Biomarkers, drug monitoring | Mucosal healing, PRO2 | Pediatric outcomes, EEN |
+| **Primary Focus** | Biomarkers, drug monitoring | Mucosal healing | Pediatric outcomes, EEN |
+| **Disease Activity Scores** | HBI, SCCAI | HBI, SCCAI, Mayo | PCDAI, PUCAI |
 
 ## Variable Availability
 
@@ -23,12 +23,14 @@ All datasets share standardized variables across demographics, laboratory values
 ### Dataset-Specific Variables
 
 #### GI-DAMPs Unique Features
+
 - `sampling_date`, `sampling_setting` (inpatient/outpatient/endoscopy)
 - `redcap_repeat_instance` for multiple sampling visits per participant
 - `comment`, `medication_comments` (free text fields)
 - More detailed medication history with start/stop dates
 
 #### MUSIC Unique Features
+
 - `endoscopic_mucosal_healing`, `complete_mucosal_healing`
 - `endoscopic_mucosal_healing_at_3_6_months`, `endoscopic_mucosal_healing_at_12_months`
 - `cd_pro2_raw`, `cd_pro2_weighted`, `uc_pro2`
@@ -36,6 +38,7 @@ All datasets share standardized variables across demographics, laboratory values
 - `saliva_sample`, `saliva_setting`, saliva-specific variables
 
 #### Mini-MUSIC Unique Features
+
 - `pucai_score`, `pcdai_score` (pediatric disease activity)
 - `cdparis_*`, `ucparis_*` (pediatric classification)
 - `impact3_score`, `promis_fatigue_score` (pediatric PROs)
@@ -62,10 +65,12 @@ All datasets share standardized variables across demographics, laboratory values
 ## Classification Systems
 
 ### Montreal Classification (Adults)
+
 - Used in: GI-DAMPs, MUSIC
 - Variables: `montreal_cd_location`, `montreal_cd_behaviour`, `montreal_uc_extent`, `montreal_uc_severity`
 
 ### Paris Classification (Pediatrics)
+
 - Used in: Mini-MUSIC
 - Variables: `cdparis_location`, `cdparis_behaviour`, `cdparis_upper_gi`, `cdparis_growth`, `cdparis_perianal`, `ucparis_extent`, `ucparis_severity`
 
@@ -78,31 +83,37 @@ Disease activity classifications vary significantly across studies. Each study u
 ## Longitudinal Structure
 
 ### GI-DAMPs
+
 - **Structure**: Sampling visits (not fixed intervals)
 - **Key Variable**: `redcap_repeat_instance` (instance number)
 - **Visit Date**: `sampling_date`
 - **Considerations**: Variable intervals between visits, based on clinical events
 
 ### MUSIC
+
 - **Structure**: Fixed timepoints
 - **Key Variable**: `redcap_event_name` (timepoint_1 through timepoint_5)
 - **Visit Date**: `visit_date`
-- **Considerations**: Fixed intervals (~3-6 months, ~6-9 months, ~9-12 months, ~12 months)
+- **Considerations**: Fixed intervals (Baseline, 3 months, 6 months, 9 months, 12 months)
 
 ### Mini-MUSIC
+
 - **Structure**: Fixed timepoints
 - **Key Variable**: `redcap_event_name` (timepoint_1, timepoint_2, timepoint_3)
 - **Visit Date**: Available in dataset
-- **Considerations**: Fixed intervals, fewer timepoints than MUSIC
+- **Considerations**: Fixed intervals (Baseline, 3 months, 6 months)
 
 ## Medication Variables
 
 ### Sampling Status (All Studies)
+
 All studies use `sampling_*` prefix to indicate medications at time of visit/sampling:
+
 - `sampling_asa`, `sampling_ifx`, `sampling_ada`, `sampling_vedo`, `sampling_uste`, etc.
 - Values: `1` = yes, `0` = no
 
 ### Historical Medication (Study-Specific)
+
 - **GI-DAMPs**: `ifx`, `ada`, `vedo`, etc. with `*_start`, `*_stop` dates
 - **MUSIC**: `baseline_*` prefix (e.g., `baseline_ifx`, `baseline_ada`)
 - **Mini-MUSIC**: `baseline_ibd_drug_1_*` through `baseline_ibd_drug_5_*` (structured format)
@@ -114,20 +125,20 @@ All studies use `sampling_*` prefix to indicate medications at time of visit/sam
 1. **Focus on Common Variables**: Use variables documented in the [Unified Data Dictionary](../data_dictionary/index.md)
 
 2. **Standardize Disease Activity**: Consider creating a standardized variable based on:
-   - `has_active_symptoms`
-   - `crp` (threshold >5 mg/L)
-   - `calprotectin` (threshold >250 μg/g)
+    - `has_active_symptoms`
+    - `crp` (threshold >5 mg/L)
+    - `calprotectin` (threshold >250 μg/g)
 
-   See [Known Issues](../issues.md) for example implementation.
+    See [Known Issues](../issues.md) for example implementation.
 
 3. **Respect Study-Specific Differences**:
-   - Don't compare pediatric scores (PCDAI/PUCAI) with adult scores
-   - Don't mix Montreal and Paris classifications
-   - Account for different timepoint structures
+    - Don't compare pediatric scores (PCDAI/PUCAI) with adult scores
+    - Don't mix Montreal and Paris classifications
+    - Account for different timepoint structures
 
 4. **Use Combined Dataset When Available**:
-   - [Combined MUSIC/Mini-MUSIC](../pipeline/combined_music.md) already merges those two datasets
-   - For GI-DAMPs + MUSIC, manually merge on common variables
+    - [Combined MUSIC/Mini-MUSIC](../pipeline/combined_music.md) already merges those two datasets
+    - For GI-DAMPs + MUSIC, manually merge on common variables
 
 ### Example: Cross-Study Analysis
 
@@ -168,36 +179,31 @@ combined['standardized_activity'] = combined.apply(standardize_activity, axis=1)
 ## Choosing the Right Dataset
 
 ### Use GI-DAMPs if you need:
+
 - ✅ Sampling-based data collection
 - ✅ Diverse recruitment settings
 - ✅ Rich biomarker data
-- ✅ Drug level monitoring
 - ⚠️ Not suitable for fixed-interval longitudinal analyses
+- ⚠️ Adults only (no paediatric data)
 
 ### Use MUSIC if you need:
+
 - ✅ Adult longitudinal data
 - ✅ Mucosal healing outcomes
-- ✅ PRO2 scores
 - ✅ Fixed timepoint structure
-- ⚠️ Adults only (no pediatric data)
+- ⚠️ Adults only (no paediatric data)
 
 ### Use Mini-MUSIC if you need:
-- ✅ Pediatric-specific data
+
+- ✅ Paediatric-specific data
 - ✅ EEN (exclusive enteral nutrition) information
 - ✅ Pediatric disease activity scores (PCDAI, PUCAI)
 - ✅ Age-appropriate classifications (Paris)
 - ⚠️ Cannot combine with adult scores
 
 ### Combine Multiple Datasets if you need:
+
 - ✅ Cross-study comparisons
 - ✅ Larger sample sizes
 - ✅ Validation across populations
 - ⚠️ Must standardize variables first (see above)
-
-## Additional Resources
-
-- [Unified Data Dictionary](../data_dictionary/index.md) - Complete list of common variables
-- [Known Issues](../issues.md) - Important limitations and differences
-- [Getting Started](../getting_started.md) - Access and usage guidelines
-- Individual dataset pages: [GI-DAMPs](gidamps.md), [MUSIC](music.md), [Mini-MUSIC](mini_music.md)
-

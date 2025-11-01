@@ -1,6 +1,5 @@
 site_name: Orca
 site_url: "https://shaunchuah.github.io/orca_docs/"
-dev_addr: "127.0.0.1:8080"
 theme:
   name: material
 
@@ -26,13 +25,15 @@ theme:
         name: Switch to system preference
   features:
     - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
     - search.suggest
     - navigation.instant
     - navigation.instant.progress
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
-  - Dataset Overviews:
+  - Datasets:
       - datasets/index.md
       - datasets/gidamps.md
       - datasets/music.md
@@ -40,18 +41,20 @@ nav:
       - datasets/comparison.md
   - Data Dictionary:
       - data_dictionary/index.md
+      - data_dictionary/columns_tabbed.md
       - data_dictionary/abbreviations.md
       - data_dictionary/gidamps_columns.md
       - data_dictionary/music_columns.md
       - data_dictionary/mini_music_columns.md
-  - Pipeline:
-      - pipeline/index.md
+  - Pipelines:
+      - pipeline/pipelines_tabbed.md
       - pipeline/gidamps.md
       - pipeline/music.md
       - pipeline/mini_music.md
       - pipeline/combined_music.md
-  - Dataset Governance: dataset_governance.md
-  - Attribution Policy: attribution_policy.md
+  - Policies:
+      - Dataset Governance: dataset_governance.md
+      - Attribution Policy: attribution_policy.md
   - Known Issues: issues.md
 markdown_extensions:
   - pymdownx.highlight:
@@ -61,3 +64,5 @@ markdown_extensions:
       linenums: true
   - pymdownx.superfences
   - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true

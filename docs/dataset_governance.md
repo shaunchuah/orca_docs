@@ -63,12 +63,11 @@ The policy applies to:
 ### Retention and Sunset
 
 - Retention periods align with study agreements and institutional policy.  
-- Sunsetting a dataset requires written steward approval, archive location documentation, and customer impact communication.
+- Sunsetting a dataset requires written steward approval, archive location documentation, and consumer impact communication.
 
 ## Issue Management and Escalation
 
-- Consumers report data issues via the Orca support channel or ticketing system.  
-- Engineering triages within two business days, collaborating with stewards for root-cause resolution.  
+- Consumers report data issues via email to the governance lead.
 - High-severity incidents (privacy exposure, regulatory breach) trigger immediate escalation to the governance lead and institutional compliance office.
 
 ## Compliance and Auditing
@@ -93,4 +92,4 @@ Report errors or omissions to the governance lead.
 
 ## Questions
 
-For governance questions, access requests, or policy clarifications, contact `orca-governance@domain.org`. For dataset-specific inquiries, reach out to the steward listed in the table above.
+For governance questions, access requests, or policy clarifications, contact [shaun.chuah@glasgow.ac.uk](shaun.chuah@glasgow.ac.uk). For dataset-specific inquiries, reach out to the steward listed in the table above.
