@@ -1,0 +1,1768 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://shaunchuah.github.io/orca_docs/data_dictionary/">
+      
+      
+        <link rel="prev" href="../datasets/comparison/">
+      
+      
+        <link rel="next" href="columns_tabbed/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Unified Data Dictionary - Orca Data Platform</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unified-data-dictionary" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Orca Data Platform" class="md-header__button md-logo" aria-label="Orca Data Platform" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Orca Data Platform
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unified Data Dictionary
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../getting_started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Getting Started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../datasets/" class="md-tabs__link">
+          
+  
+  
+  Datasets
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Data Dictionary
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../pipeline/" class="md-tabs__link">
+          
+  
+  
+  Pipelines
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../dataset_governance/" class="md-tabs__link">
+          
+  
+  
+  Policies
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../issues/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Known Issues
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Orca Data Platform" class="md-nav__button md-logo" aria-label="Orca Data Platform" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Orca Data Platform
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Datasets
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Datasets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dataset Overviews
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets/gidamps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GI-DAMPs Dataset
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets/music/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MUSIC Dataset
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets/mini_music/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mini-MUSIC Dataset
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets/comparison/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dataset Comparison Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Data Dictionary
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Data Dictionary
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Unified Data Dictionary
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Unified Data Dictionary
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#naming-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming Convention
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Organization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demographics-visit-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demographics &amp; Visit Context
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#laboratory-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Laboratory Values
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ibd-phenotyping" class="md-nav__link">
+    <span class="md-ellipsis">
+      IBD Phenotyping
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ibd-medications-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      IBD Medications &amp; Monitoring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#investigations-imaging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Investigations &amp; Imaging
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="columns_tabbed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Study-Specific Columns
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="abbreviations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Abbreviations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gidamps_columns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GI-DAMPs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="music_columns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MUSIC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mini_music_columns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mini-MUSIC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pipelines
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Pipelines
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Pipelines
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pipeline/gidamps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GI-DAMPs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pipeline/music/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MUSIC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pipeline/mini_music/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mini-MUSIC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pipeline/combined_music/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Combined Mini-MUSIC and MUSIC pipeline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Policies
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Policies
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dataset_governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dataset Governance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../attribution_policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Attribution Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../study_authors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Study Authors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Known Issues
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#naming-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming Convention
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Organization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demographics-visit-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demographics &amp; Visit Context
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#laboratory-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Laboratory Values
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ibd-phenotyping" class="md-nav__link">
+    <span class="md-ellipsis">
+      IBD Phenotyping
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ibd-medications-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      IBD Medications &amp; Monitoring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#investigations-imaging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Investigations &amp; Imaging
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="unified-data-dictionary">Unified Data Dictionary</h1>
+<p>This standardized data dictionary documents the common variables shared across all Orca datasets within G-Trac. These variables have been harmonized to enable cross-study analyses while preserving study-specific details.</p>
+<p><strong>Note</strong>: Each study dataset also includes study-specific fields documented separately:
+- <a href="gidamps_columns/">GI-DAMPs Columns</a>
+- <a href="music_columns/">MUSIC Columns</a>
+- <a href="mini_music_columns/">Mini-MUSIC Columns</a></p>
+<h2 id="naming-convention">Naming Convention</h2>
+<p>All variables in Orca datasets follow the <strong>snake_case</strong> naming convention:
+- All characters are lowercase
+- Words are separated by underscores
+- No spaces or special characters (except underscores)
+- Examples: <code>study_id</code>, <code>nhs_bloods_date</code>, <code>hbi_total</code></p>
+<h2 id="variable-organization">Variable Organization</h2>
+<p>The sections below group the shared fields into logical themes to help you quickly find related variables across datasets. For study-specific variables, refer to the individual dataset column lists.</p>
+<h2 id="demographics-visit-context">Demographics &amp; Visit Context</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Values</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>study_id</td>
+<td>string</td>
+<td></td>
+<td>Study-specific participant identifier using prefixes such as <code>GID-</code>, <code>MID-</code>, or <code>MINI-</code>.</td>
+</tr>
+<tr>
+<td>study_group</td>
+<td>string</td>
+<td><code>cd</code>, <code>uc</code>, <code>ibdu</code>, <code>non_ibd</code>, <code>await_dx</code>, <code>hc</code></td>
+<td>Disease classification at the visit: Crohn's disease (cd), Ulcerative colitis (uc), IBD unclassified (ibdu), non-IBD control, awaiting diagnosis, or healthy control.</td>
+</tr>
+<tr>
+<td>study_center</td>
+<td>string</td>
+<td><code>edinburgh</code>, <code>glasgow</code>, <code>aberdeen</code>, <code>dundee</code></td>
+<td>Recruiting centre recorded for the visit.</td>
+</tr>
+<tr>
+<td>sex</td>
+<td>string</td>
+<td><code>male</code>, <code>female</code></td>
+<td>Participant sex recorded by the study.</td>
+</tr>
+<tr>
+<td>age</td>
+<td>int</td>
+<td></td>
+<td>Participant age in years at the time of the visit.</td>
+</tr>
+<tr>
+<td>age_at_diagnosis</td>
+<td>int</td>
+<td></td>
+<td>Age in years when inflammatory bowel disease was first diagnosed.</td>
+</tr>
+<tr>
+<td>date_of_diagnosis</td>
+<td>date</td>
+<td>YYYY-MM-DD</td>
+<td>Calendar date when inflammatory bowel disease was first diagnosed.</td>
+</tr>
+<tr>
+<td>has_active_symptoms</td>
+<td>string</td>
+<td><code>1</code> / <code>0</code> or <code>yes</code> / <code>no</code></td>
+<td>Indicator of active symptoms at the visit; recorded as <code>1</code>/<code>0</code> or <code>yes</code>/<code>no</code> depending on source system.</td>
+</tr>
+<tr>
+<td>height</td>
+<td>int</td>
+<td></td>
+<td>Height measured in centimetres.</td>
+</tr>
+<tr>
+<td>weight</td>
+<td>float</td>
+<td></td>
+<td>Weight measured in kilograms.</td>
+</tr>
+<tr>
+<td>bmi</td>
+<td>float</td>
+<td></td>
+<td>Body mass index calculated as kg/m^2.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="laboratory-values">Laboratory Values</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Values</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nhs_bloods_date</td>
+<td>date</td>
+<td>YYYY-MM-DD</td>
+<td>Date the NHS blood panel was collected.</td>
+</tr>
+<tr>
+<td>haemoglobin</td>
+<td>float</td>
+<td></td>
+<td>Haemoglobin concentration (g/L) from NHS bloods.</td>
+</tr>
+<tr>
+<td>haematocrit</td>
+<td>float</td>
+<td></td>
+<td>Haematocrit reported as a proportion (L/L).</td>
+</tr>
+<tr>
+<td>white_cell_count</td>
+<td>float</td>
+<td></td>
+<td>Total white cell count (x10^9/L) from NHS bloods.</td>
+</tr>
+<tr>
+<td>neutrophils</td>
+<td>float</td>
+<td></td>
+<td>Absolute neutrophil count (x10^9/L) from NHS bloods.</td>
+</tr>
+<tr>
+<td>lymphocytes</td>
+<td>float</td>
+<td></td>
+<td>Absolute lymphocyte count (x10^9/L) from NHS bloods.</td>
+</tr>
+<tr>
+<td>monocytes</td>
+<td>float</td>
+<td></td>
+<td>Absolute monocyte count (x10^9/L) from NHS bloods.</td>
+</tr>
+<tr>
+<td>basophils</td>
+<td>float</td>
+<td></td>
+<td>Absolute basophil count (x10^9/L) from NHS bloods.</td>
+</tr>
+<tr>
+<td>eosinophils</td>
+<td>float</td>
+<td></td>
+<td>Absolute eosinophil count (x10^9/L) from NHS bloods.</td>
+</tr>
+<tr>
+<td>platelets</td>
+<td>int</td>
+<td></td>
+<td>Platelet count (x10^9/L) from NHS bloods.</td>
+</tr>
+<tr>
+<td>sodium</td>
+<td>float</td>
+<td></td>
+<td>Serum sodium (mmol/L) from NHS bloods.</td>
+</tr>
+<tr>
+<td>potassium</td>
+<td>float</td>
+<td></td>
+<td>Serum potassium (mmol/L) from NHS bloods.</td>
+</tr>
+<tr>
+<td>urea</td>
+<td>float</td>
+<td></td>
+<td>Serum urea (mmol/L) from NHS bloods.</td>
+</tr>
+<tr>
+<td>creatinine</td>
+<td>float</td>
+<td></td>
+<td>Serum creatinine from NHS bloods, measured in umol/L.</td>
+</tr>
+<tr>
+<td>albumin</td>
+<td>float</td>
+<td></td>
+<td>Serum albumin from NHS bloods, measured in g/L.</td>
+</tr>
+<tr>
+<td>crp</td>
+<td>float</td>
+<td></td>
+<td>C-reactive protein (mg/L) from NHS bloods.</td>
+</tr>
+<tr>
+<td>calprotectin</td>
+<td>string</td>
+<td>numeric or threshold string (e.g., <code>&lt;20</code>, <code>&gt;1800</code>, <code>no sample</code>)</td>
+<td>Faecal calprotectin result (ug/g) reported as numeric values or qualitative thresholds by the laboratory.</td>
+</tr>
+<tr>
+<td>calprotectin_date</td>
+<td>date</td>
+<td>YYYY-MM-DD</td>
+<td>Date the faecal calprotectin sample was collected.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ibd-phenotyping">IBD Phenotyping</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Values</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>baseline_eims_none</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no</td>
+<td>Baseline survey response confirming no extra-intestinal manifestations were reported.</td>
+</tr>
+<tr>
+<td>baseline_eims_episcleritis</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no</td>
+<td>Baseline record indicating a history of episcleritis as an extra-intestinal manifestation.</td>
+</tr>
+<tr>
+<td>baseline_eims_erythema_nodosum</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no</td>
+<td>Baseline record indicating erythema nodosum as an extra-intestinal manifestation.</td>
+</tr>
+<tr>
+<td>baseline_eims_pyoderma</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no</td>
+<td>Baseline record indicating pyoderma gangrenosum as an extra-intestinal manifestation.</td>
+</tr>
+<tr>
+<td>baseline_eims_sacroileitis</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no</td>
+<td>Baseline record indicating sacroiliitis as an extra-intestinal manifestation.</td>
+</tr>
+<tr>
+<td>baseline_eims_uveitis</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no</td>
+<td>Baseline record indicating uveitis as an extra-intestinal manifestation.</td>
+</tr>
+<tr>
+<td>previous_appendicectomy</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no</td>
+<td>History of appendicectomy recorded at baseline.</td>
+</tr>
+<tr>
+<td>previous_tonsillectomy</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no, <code>-1000</code> unknown</td>
+<td>History of tonsillectomy recorded at baseline; <code>-1000</code> is used where the source study captured an explicit unknown response.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ibd-medications-monitoring">IBD Medications &amp; Monitoring</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Values</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sampling_asa</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no</td>
+<td>Aminosalicylates (5-ASA) were being taken at the time of sampling.</td>
+</tr>
+<tr>
+<td>sampling_ada</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no</td>
+<td>Adalimumab was being taken at the time of sampling.</td>
+</tr>
+<tr>
+<td>sampling_ifx</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no</td>
+<td>Infliximab was being taken at the time of sampling.</td>
+</tr>
+<tr>
+<td>sampling_mtx</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no</td>
+<td>Methotrexate was being taken at the time of sampling.</td>
+</tr>
+<tr>
+<td>sampling_uste</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no</td>
+<td>Ustekinumab was being taken at the time of sampling.</td>
+</tr>
+<tr>
+<td>sampling_vedo</td>
+<td>int</td>
+<td><code>1</code> yes, <code>0</code> no</td>
+<td>Vedolizumab was being taken at the time of sampling.</td>
+</tr>
+<tr>
+<td>drug_level_date</td>
+<td>date</td>
+<td>YYYY-MM-DD</td>
+<td>Date the therapeutic drug monitoring sample (for biologic drug or antibody levels) was taken.</td>
+</tr>
+<tr>
+<td>ada_level</td>
+<td>string</td>
+<td>assay result in ug/mL (numeric or threshold string)</td>
+<td>Measured adalimumab concentration from therapeutic drug monitoring; labs often report numeric levels or threshold strings such as <code>&gt;12</code>.</td>
+</tr>
+<tr>
+<td>ada_antibody</td>
+<td>string</td>
+<td>assay result (e.g., <code>5</code>, <code>&lt;10</code>, <code>not_tested</code>)</td>
+<td>Anti-adalimumab antibody result captured during therapeutic drug monitoring; qualitative thresholds or numeric titres reported by the lab.</td>
+</tr>
+<tr>
+<td>ifx_level</td>
+<td>string</td>
+<td>assay result in ug/mL (numeric or threshold string)</td>
+<td>Measured infliximab concentration from therapeutic drug monitoring; labs report numeric values or thresholds such as <code>&gt;12</code>.</td>
+</tr>
+<tr>
+<td>ifx_antibody</td>
+<td>string</td>
+<td>assay result (e.g., <code>5</code>, <code>&lt;10</code>, <code>not_detected</code>)</td>
+<td>Anti-infliximab antibody result from therapeutic drug monitoring; values include numeric titres or qualitative thresholds.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="investigations-imaging">Investigations &amp; Imaging</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Values</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>endoscopy_date</td>
+<td>date</td>
+<td>YYYY-MM-DD</td>
+<td>Date of the most recent endoscopy associated with the visit.</td>
+</tr>
+<tr>
+<td>endoscopy_report</td>
+<td>string</td>
+<td></td>
+<td>Narrative endoscopy findings recorded in clinical notes.</td>
+</tr>
+<tr>
+<td>pathology_report</td>
+<td>string</td>
+<td></td>
+<td>Narrative pathology findings (e.g., biopsy results).</td>
+</tr>
+<tr>
+<td>mri_small_bowel</td>
+<td>int</td>
+<td><code>1</code> performed, <code>0</code> not performed</td>
+<td>Indicator that a small bowel MRI was completed for the visit.</td>
+</tr>
+<tr>
+<td>mri_pelvis</td>
+<td>int</td>
+<td><code>1</code> performed, <code>0</code> not performed</td>
+<td>Indicator that a pelvic MRI was completed for the visit.</td>
+</tr>
+<tr>
+<td>mri_small_bowel_report</td>
+<td>string</td>
+<td></td>
+<td>Narrative findings from the small bowel MRI report.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "navigation.instant", "navigation.instant.progress"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
