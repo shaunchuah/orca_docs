@@ -11,7 +11,7 @@ This section provides comprehensive overviews of each dataset available through 
     **Key Characteristics:**
 
     - Data Structure: Sampling-based visits (not fixed timepoints)
-    - Participants: Adults and children
+    - Participants: Adults only
     - Recruitment Settings: Inpatient, outpatient, and endoscopy-based
     - Focus Areas: Biomarker research, drug monitoring, disease activity assessment
 
@@ -80,5 +80,4 @@ This section provides comprehensive overviews of each dataset available through 
     | **Disease Activity Scores** | HBI, SCCAI | HBI, SCCAI, Mayo | PCDAI, PUCAI |
 
     **[View Detailed Comparison Guide →](comparison.md)**
-
 

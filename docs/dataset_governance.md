@@ -92,4 +92,4 @@ Report errors or omissions to the governance lead.
 
 ## Questions
 
-For governance questions, access requests, or policy clarifications, contact [shaun.chuah@glasgow.ac.uk](shaun.chuah@glasgow.ac.uk). For dataset-specific inquiries, reach out to the steward listed in the table above.
+For governance questions, access requests, or policy clarifications, contact [shaun.chuah@glasgow.ac.uk](mailto:shaun.chuah@glasgow.ac.uk). For dataset-specific inquiries, reach out to the steward listed in the table above.

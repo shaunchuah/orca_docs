@@ -15,7 +15,7 @@ Orca is a Dagster-based data engineering platform that aggregates data from mult
 ## Quick Start
 
 1. **[Getting Started](getting_started.md)** - Learn how to access and work with Orca datasets
-2. **[Datasets](datasets/datasets_tabbed.md)** - Explore each dataset's features and statistics (with tabs for quick comparison)
+2. **[Dataset Overviews](datasets/index.md)** - Explore each dataset's features and statistics (with tabs for quick comparison)
 3. **[Data Dictionary](data_dictionary/index.md)** - Understand the standardized variables and study-specific fields
 4. **[Pipelines](pipeline/pipelines_tabbed.md)** - Review the data transformation code and lineage
 
@@ -47,7 +47,7 @@ Datasets include:
 
 | Section | Description |
 |---------|-------------|
-| [Datasets](datasets/datasets_tabbed.md) | Key statistics, features, and characteristics of each dataset (tabbed view) |
+| [Dataset Overviews](datasets/index.md) | Key statistics, features, and characteristics of each dataset (tabbed view) |
 | [Data Dictionary](data_dictionary/index.md) | Complete variable reference with types, values, and descriptions |
 | [Pipelines](pipeline/pipelines_tabbed.md) | Code documentation for data extraction and transformation (tabbed view) |
 | [Policies](dataset_governance.md) | Dataset governance, attribution policy, and access requirements |
@@ -59,4 +59,4 @@ For questions about:
 
 - **Dataset access**: Contact the data steward listed in [Dataset Governance](dataset_governance.md)
 - **Data interpretation**: Review the [Data Dictionary](data_dictionary/index.md) and [Known Issues](issues.md)
-- **Technical support**: Contact the Orca engineering team via [shaun.chuah@glasgow.ac.uk]
+- **Technical support**: Contact the Orca engineering team via [shaun.chuah@glasgow.ac.uk](mailto:shaun.chuah@glasgow.ac.uk)

@@ -36,5 +36,3 @@ Each study dataset includes study-specific variables in addition to the [common 
     - Detailed current medication tracking: `ibd_drug_1_*` through `ibd_drug_5_*`
 
     **[View Complete Mini-MUSIC Column List →](mini_music_columns.md)**
-
-

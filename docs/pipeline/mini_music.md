@@ -1,5 +1,7 @@
 # Mini-MUSIC
 
+The Mini-MUSIC pipeline targets the pediatric REDCap project, fetching forms that capture paediatric classifications, exclusive enteral nutrition data, and patient-reported outcomes. During cleaning it renames columns to the shared Orca schema, maps coded responses into descriptive labels, and assembles structured medication blocks so analysts can join Mini-MUSIC with adult cohorts. Review the asset definitions below to understand how each paediatric-specific field is transformed before publication.
+
 ```py title="assets/mini_music.py"
 import numpy as np
 import pandas as pd

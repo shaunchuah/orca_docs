@@ -1,5 +1,7 @@
 # Combined Mini-MUSIC and MUSIC pipeline
 
+This combined asset concatenates the cleaned adult MUSIC dataframe with the paediatric Mini-MUSIC extract so analysts can run cross-cohort queries. Before returning the merged frame it records row and column dimensions plus the overlapping versus study-specific columns, which helps consumers decide which variables can be compared directly.
+
 ```py title="assets/combined_music_mini_music.py"
 import pandas as pd
 from dagster import AssetExecutionContext, MaterializeResult, asset

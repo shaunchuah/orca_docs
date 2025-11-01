@@ -49,5 +49,3 @@ If you need to trace the changes made to a variable, you can search within the p
     - **Metadata**: Provides detailed information about merged dimensions
 
     **[View Combined Pipeline Code →](combined_music.md)**
-
-

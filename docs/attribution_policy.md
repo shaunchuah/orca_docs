@@ -33,4 +33,4 @@ Any request to omit or anonymize study or steward names must be approved by the 
 
 ### Questions and Updates
 
-For clarification, contact the Orca governance lead at [shaun.chuah@glasgow.ac.uk](shaun.chuah@glasgow.ac.uk). This policy will be reviewed annually and updated as platform processes evolve. Always reference the latest version in Orca Docs.
+For clarification, contact the Orca governance lead at [shaun.chuah@glasgow.ac.uk](mailto:shaun.chuah@glasgow.ac.uk). This policy will be reviewed annually and updated as platform processes evolve. Always reference the latest version in Orca Docs.

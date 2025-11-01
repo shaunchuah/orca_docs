@@ -1,5 +1,7 @@
 # MUSIC
 
+The MUSIC pipeline orchestrates multiple REDCap instruments to assemble a longitudinal cohort extract. It pulls baseline, timepoint, laboratory, endoscopy, saliva, and radiology forms, then re-engineers baseline drug flags, harmonises column names, and calculates derived measures such as PRO2 scores and mucosal healing outcomes. Use this reference to tracing how adult longitudinal variables enter the cleaned dataframe that Orca publishes to G-Trac.
+
 ```py title="assets/music.py"
 import numpy as np
 import pandas as pd

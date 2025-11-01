@@ -1,5 +1,7 @@
 # GI-DAMPs
 
+The GI-DAMPs pipeline pulls sampling records from the IGMM REDCap server, removes direct identifiers, and reshapes the data into tidy assets that Dagster can materialise. The cleaning step standardises column names, coerces numeric and date types, maps categorical codes to readable values, and prepares derived fields such as medication flags and disease activity indicators. Refer to the code below whenever you need to confirm how a specific variable is constructed before it lands in G-Trac.
+
 ```py title="assets/gidamps.py"
 import datetime
 

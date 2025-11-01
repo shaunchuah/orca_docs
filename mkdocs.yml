@@ -1,4 +1,4 @@
-site_name: Orca
+site_name: Orca Data Platform
 site_url: "https://shaunchuah.github.io/orca_docs/"
 theme:
   name: material
@@ -55,6 +55,7 @@ nav:
   - Policies:
       - Dataset Governance: dataset_governance.md
       - Attribution Policy: attribution_policy.md
+      - Study Authors: study_authors.md
   - Known Issues: issues.md
 markdown_extensions:
   - pymdownx.highlight:

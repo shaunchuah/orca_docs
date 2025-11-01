@@ -39,7 +39,7 @@ Orca datasets are stored in G-Trac and processed through Dagster pipelines. Each
 Before accessing data, familiarize yourself with:
 
 1. **[Unified Data Dictionary](data_dictionary/index.md)** - Common variables across all datasets
-2. **[Study-Specific Columns](data_dictionary/)** - Variables unique to each study
+2. **[Study-Specific Columns](data_dictionary/columns_tabbed.md)** - Variables unique to each study
 3. **[Dataset Governance](dataset_governance.md)** - Access policies and requirements
 
 ### Step 2: Load and Explore Data
@@ -59,6 +59,13 @@ print(f"Columns: {df.columns.tolist()[:10]}...")  # First 10 columns
 # Explore common variables
 print(df[['study_id', 'study_group', 'age', 'sex', 'crp', 'calprotectin']].head())
 ```
+
+### Access Workflow
+
+1. Review the [Dataset Governance](dataset_governance.md) policy to confirm you meet any prerequisite training and to identify the correct data steward for the study.
+2. Email the governance lead and the relevant steward (see the contacts listed in the policy) with a short summary of your project, the datasets you need, and the timeframe for access.
+3. The governance lead records the request, coordinates steward approval, and replies with confirmation plus the G-Trac folder path for the authorised datasets. Orca datasets are stored within the Orca workspace on G-Trac and each CSV filename includes the extraction date (for example, `music_main_2025-01-15.csv`).
+4. Sign in to G-Trac with your institutional credentials to download the most recent dated files. When pipelines publish a refresh, the governance lead shares release notes by email and keeps the folder-level README up to date, so monitor those messages for cadence updates.
 
 ## Understanding Variable Names
 
@@ -163,6 +170,5 @@ df['date_of_diagnosis'] = pd.to_datetime(df['date_of_diagnosis'])
 ## Getting Help
 
 - **Data questions**: Contact study data stewards (see [Dataset Governance](dataset_governance.md))
-- **Technical issues**: [shaun.chuah@glasgow.ac.uk](shaun.chuah@glasgow.ac.uk)
+- **Technical issues**: [shaun.chuah@glasgow.ac.uk](mailto:shaun.chuah@glasgow.ac.uk)
 - **Documentation updates**: Submit issues or pull requests
-

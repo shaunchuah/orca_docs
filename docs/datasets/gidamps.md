@@ -9,7 +9,7 @@ GI-DAMPs (Investigation into the inflammatory mechanism of gut damage-associated
 ## Key Characteristics
 
 - **Data Structure**: Sampling-based visits (not fixed timepoints)
-- **Participants**: Adults and children
+- **Participants**: Adults only
 - **Recruitment Settings**: Inpatient, outpatient, and endoscopy-based
 - **Focus Areas**: Biomarker research, drug monitoring, disease activity assessment
 
@@ -118,4 +118,3 @@ Since visits are sampling-based rather than scheduled, there's no consistent fol
 ## Data Access
 
 For access requests or data questions, contact the data stewards listed in [Dataset Governance](../dataset_governance.md).
-
