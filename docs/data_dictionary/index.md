@@ -1,11 +1,23 @@
 # Unified Data Dictionary
 
-This standardized data dictionary is used for datasets within G-Trac. Only the common variables across datasets are standardized as shown below. Each study dataset will also include its own study-specific data fields.
+This standardized data dictionary documents the common variables shared across all Orca datasets within G-Trac. These variables have been harmonized to enable cross-study analyses while preserving study-specific details.
 
-As a standard style guide, all variables in datasets will follow the snake_case naming convention. All characters will be in lower case, and underscores will be used instead of spaces.
+**Note**: Each study dataset also includes study-specific fields documented separately:
+- [GI-DAMPs Columns](gidamps_columns.md)
+- [MUSIC Columns](music_columns.md)
+- [Mini-MUSIC Columns](mini_music_columns.md)
 
-The sections below group the shared fields into themes so readers can quickly find related variables across datasets.
+## Naming Convention
 
+All variables in Orca datasets follow the **snake_case** naming convention:
+- All characters are lowercase
+- Words are separated by underscores
+- No spaces or special characters (except underscores)
+- Examples: `study_id`, `nhs_bloods_date`, `hbi_total`
+
+## Variable Organization
+
+The sections below group the shared fields into logical themes to help you quickly find related variables across datasets. For study-specific variables, refer to the individual dataset column lists.
 
 ## Demographics & Visit Context
 
@@ -28,20 +40,20 @@ The sections below group the shared fields into themes so readers can quickly fi
 | Variable | Type | Values | Comments |
 |---|---|---|---|
 | nhs_bloods_date | date | YYYY-MM-DD | Date the NHS blood panel was collected. |
-| albumin | float |  | Serum albumin from NHS bloods, measured in g/L. |
-| basophils | float |  | Absolute basophil count (x10^9/L) from NHS bloods. |
-| eosinophils | float |  | Absolute eosinophil count (x10^9/L) from NHS bloods. |
 | haemoglobin | float |  | Haemoglobin concentration (g/L) from NHS bloods. |
 | haematocrit | float |  | Haematocrit reported as a proportion (L/L). |
+| white_cell_count | float |  | Total white cell count (x10^9/L) from NHS bloods. |
+| neutrophils | float |  | Absolute neutrophil count (x10^9/L) from NHS bloods. |
 | lymphocytes | float |  | Absolute lymphocyte count (x10^9/L) from NHS bloods. |
 | monocytes | float |  | Absolute monocyte count (x10^9/L) from NHS bloods. |
-| neutrophils | float |  | Absolute neutrophil count (x10^9/L) from NHS bloods. |
+| basophils | float |  | Absolute basophil count (x10^9/L) from NHS bloods. |
+| eosinophils | float |  | Absolute eosinophil count (x10^9/L) from NHS bloods. |
 | platelets | int |  | Platelet count (x10^9/L) from NHS bloods. |
-| white_cell_count | float |  | Total white cell count (x10^9/L) from NHS bloods. |
 | sodium | float |  | Serum sodium (mmol/L) from NHS bloods. |
 | potassium | float |  | Serum potassium (mmol/L) from NHS bloods. |
 | urea | float |  | Serum urea (mmol/L) from NHS bloods. |
 | creatinine | float |  | Serum creatinine from NHS bloods, measured in umol/L. |
+| albumin | float |  | Serum albumin from NHS bloods, measured in g/L. |
 | crp | float |  | C-reactive protein (mg/L) from NHS bloods. |
 | calprotectin | string | numeric or threshold string (e.g., `<20`, `>1800`, `no sample`) | Faecal calprotectin result (ug/g) reported as numeric values or qualitative thresholds by the laboratory. |
 | calprotectin_date | date | YYYY-MM-DD | Date the faecal calprotectin sample was collected. |
@@ -85,4 +97,3 @@ The sections below group the shared fields into themes so readers can quickly fi
 | mri_small_bowel | int | `1` performed, `0` not performed | Indicator that a small bowel MRI was completed for the visit. |
 | mri_pelvis | int | `1` performed, `0` not performed | Indicator that a pelvic MRI was completed for the visit. |
 | mri_small_bowel_report | string |  | Narrative findings from the small bowel MRI report. |
-

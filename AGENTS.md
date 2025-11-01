@@ -4,7 +4,7 @@ This project is a documentation platform running on mkdocs-material that surface
 
 ## ExecPlans
 
-When writing complex features or significant refactors, use an ExecPlan (as described in agent/PLANS.md) from design to implementation. Write new plans to the `agent/plans` dir. Place any temporary research, clones, etc., in a subdirectory of `agent`.
+When writing complex features or significant refactors, use an ExecPlan (as described in `agent/PLANS.md`) from design to implementation. Write new plans to the `agent/plans` dir. Place any temporary research, clones, etc., in a subdirectory of `agent`.
 
 ## Do
 

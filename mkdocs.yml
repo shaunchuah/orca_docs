@@ -31,22 +31,28 @@ theme:
     - navigation.instant.progress
 nav:
   - Home: index.md
-  - Attribution Policy: attribution_policy.md
-  - Dataset Governance: dataset_governance.md
-  - Issues: issues.md
+  - Getting Started: getting_started.md
+  - Dataset Overviews:
+      - datasets/index.md
+      - datasets/gidamps.md
+      - datasets/music.md
+      - datasets/mini_music.md
+      - datasets/comparison.md
   - Data Dictionary:
       - data_dictionary/index.md
       - data_dictionary/abbreviations.md
       - data_dictionary/gidamps_columns.md
       - data_dictionary/music_columns.md
       - data_dictionary/mini_music_columns.md
-
   - Pipeline:
       - pipeline/index.md
       - pipeline/gidamps.md
       - pipeline/music.md
       - pipeline/mini_music.md
       - pipeline/combined_music.md
+  - Dataset Governance: dataset_governance.md
+  - Attribution Policy: attribution_policy.md
+  - Known Issues: issues.md
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
